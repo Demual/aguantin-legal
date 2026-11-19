@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aguantín · Datenschutzerklärung</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1b16; background: #fff8f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece0d8; background: #1a120e; }
+    td, th { border-color: #444 !important; }
+    a { color: #ffb693; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8b3a0f; }
+  @media (prefers-color-scheme: dark) { h2 { color: #ffb693; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-inline-start: 4px solid #8b3a0f; padding-block: .5rem; padding-inline: 1rem 0; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Datenschutzerklärung</h1>
+<p class="fecha">App Aguantín (<code>com.jrsoft.bateria</code>) · Zuletzt aktualisiert: 17. November 2026</p>
+
+<p class="clave"><strong>In einem Satz:</strong> Diese App hat weder Benutzerkonten noch einen Server, und die Messwerte deines Akkus, dein Ladeverlauf, deine Ladegerätetests und deine Einstellungen verlassen dein Handy nicht (außer wenn du sie selbst auf ein neues Handy überträgst oder den Verlauf exportierst). Nur die Werbung sendet Daten, und das übernimmt die Bibliothek von Google.</p>
+
+<p>Die spanische Fassung ist die Referenzfassung dieser Erklärung; dies ist eine Übersetzung derselben Fassung.</p>
+
+<h2>Wer verantwortlich ist</h2>
+<p>Verantwortlicher für die Datenverarbeitung ist JR Soft, Handelsname von Javier Román Sáez, dem Entwickler der App. Du erreichst uns unter <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Was diese App NICHT tut</h2>
+<ul>
+  <li>Es gibt keine Registrierung, kein Konto, kein Benutzerprofil und keinen eigenen Server. Die App läuft vollständig auf deinem Handy.</li>
+  <li>Es gibt kein eigenes Analyse- oder Absturzbericht-Tool: weder Google Analytics noch Crashlytics noch etwas Vergleichbares. Die einzige Bibliothek, die eigene Daten an Dritte sendet, ist die der Werbung; sie wird unten erklärt. Die App enthält die Firebase-Bibliothek für die Fernkonfiguration (Remote Config), mit der sich die Werbung anpassen ließe, ohne eine neue Version zu veröffentlichen, aber sie ist deaktiviert: Sie startet nicht und verbindet sich mit keinem Server. Sollte sie eines Tages aktiviert werden, wird diese Erklärung vorher aktualisiert.</li>
+  <li>Sie nutzt weder den Standort des Handys noch die Kamera, das Mikrofon, deine Kontakte, deine Fotos oder Dateien. Zum Auslesen des Akkus ist keine Berechtigung nötig: Android stellt diese Information jeder App zur Verfügung.</li>
+  <li>Sie schaut nicht nach, welche anderen Apps du hast und wie viel jede davon verbraucht.</li>
+  <li>JR Soft speichert deine Daten nicht, außer den E-Mails, die du uns schickst, und gibt niemandem Listen oder Datenbanken damit weiter. Um Anzeigen zu zeigen und zu messen, erhebt das Werbe-SDK von Google (AdMob) eigenständig Gerätekennungen und andere technische Daten und sendet sie an Google, wie in dieser Erklärung beschrieben. Einige Datenschutzgesetze in den USA sehen es als „Verkauf“ oder „Weitergabe“ personenbezogener Daten an, wenn man dem SDK eines Dritten erlaubt, diese Daten für personalisierte Werbung zu erheben; wenn du dort lebst, kannst du widersprechen (siehe „<a href="#usa">Einwohner der USA</a>“).</li>
+</ul>
+
+<h2>Daten, die nur auf deinem Handy bleiben</h2>
+<p>Diese Informationen werden im privaten Speicher der App abgelegt und verlassen die App nicht. Sie verschwinden vollständig, wenn du die App deinstallierst oder ihre Daten in den Android-Einstellungen löschst (Einstellungen → Apps → Aguantín → Speicher → Daten löschen).</p>
+<ul>
+  <li><strong>Die Messwerte des Akkus</strong>: Datum und Uhrzeit, Ladestand, ob geladen wird, die Art des Ladegeräts (Netzladegerät, USB oder kabellos), Temperatur, Spannung, ungefährer Strom und der Ladezähler des Handys. Bei geschlossener App werden sie im Hintergrund erfasst, etwa alle 15 Minuten und häufiger während des Ladens.</li>
+  <li><strong>Deine Ladevorgänge</strong>: wann jeder begann und endete, von welchem bis zu welchem Ladestand, mit welchem Ladegerät, die höchste Temperatur und der höchste Strom und wie viel geladen wurde.</li>
+  <li><strong>Der geschätzte Zustand</strong>: die Kapazität, die die App aus deinen Ladevorgängen berechnet, die Zyklen (die Android 14 oder neuer meldet, wenn der Hersteller sie ausfüllt, und die, die die App zählt) und die Nennkapazität, nur wenn du sie selbst eingibst.</li>
+  <li><strong>Deine Ladegerätetests</strong>: der Name, den du ihnen gibst, und was jeder gemessen hat (durchschnittlicher Strom und durchschnittliche Leistung, Spannung, Ladestand und Dauer). Sie lassen sich in der App einzeln löschen.</li>
+  <li><strong>Deine Einstellungen</strong>: Stil, Design, Temperatureinheit, welche Hinweise du möchtest und bei welchem Ladestand oder welcher Temperatur, und ob du die Statusbenachrichtigung möchtest.</li>
+  <li><strong>Was die App über dieses Handy lernt</strong>: in welcher Einheit und mit welchem Vorzeichen es den Strom angibt, die Ladegrenze, die bei ihm beobachtet wurde (zum Beispiel, ob es bei 80 % stoppt), und welche Hinweise bereits gesendet wurden, damit sie sich nicht wiederholen.</li>
+  <li>Das Datum, an dem du zuletzt gebeten wurdest, die App zu bewerten, damit das nicht öfter als einmal alle 120 Tage geschieht.</li>
+  <li>Hersteller und Modell des Handys, die der Ratgeber im jeweiligen Moment abfragt, um dir die Schritte für deine Marke zu zeigen. Sie werden weder gespeichert noch gesendet.</li>
+  <li>Das Land deiner SIM-Karte (oder, falls keine vorhanden ist, das der Systemregion), das der Bildschirm „Weitere Apps von JR Soft“ im jeweiligen Moment abfragt, um nur die Apps zu zeigen, die in deinem Land verfügbar sind. Es wird weder gespeichert noch gesendet. Die Google-Play-Links auf diesem Bildschirm und unter „App teilen“ tragen eine Kennzeichnung, dass sie von dieser App kommen, ohne Daten von dir.</li>
+</ul>
+<p><strong>Die Hinweise, die Widgets und die Kachel in den Schnelleinstellungen</strong> werden auf dem Handy selbst aus diesen Daten erzeugt. Keines davon läuft über Server: Es gibt keine Benachrichtigungen, die aus dem Internet gesendet werden. Die Widgets zeigen deinen Akkustand auf dem Startbildschirm, sichtbar für alle, die auf das Handy schauen.</p>
+
+<h2>Den Verlauf exportieren</h2>
+<p>Wenn du auf „Verlauf exportieren (CSV)“ tippst, erstellt die App auf dem Handy eine Datei mit deinen Messwerten und Ladevorgängen, und Android lässt dich wählen, an welche App du sie schickst (deine E-Mail, deinen Cloud-Speicher, einen Messenger …). Du verschickst sie selbst und nur dorthin, wohin du willst; ab diesem Moment gelten die Datenschutzbestimmungen dieser App. JR Soft erhält nichts.</p>
+
+<h2>Sicherungen, Handywechsel und was nicht übertragen wird</h2>
+<p>Die Android-Cloud-Sicherung (die deines Google-Kontos) ist für die Daten dieser App deaktiviert: Es werden keine hochgeladen. Android speichert in deinem Konto zwar die Liste der Apps, die du installiert hattest, um sie erneut installieren zu können, aber diese Liste verwaltet Google, und sie enthält keine Daten der App.</p>
+<p>Wenn du beim Einrichten eines neuen Handys deine Daten direkt vom alten kopierst, mit oder ohne Kabel, können der Verlauf, die Ladevorgänge, die Ladegerätetests und die Einstellungen auf das neue Handy übergehen. Diese Übertragung veranlasst du selbst, und Android führt sie durch, mit seinem eigenen Werkzeug oder dem des Handyherstellers und zu deren eigenen Bedingungen. Laut der Android-Dokumentation gehen die Daten dabei von einem Handy zum anderen, ohne über Server zu laufen. Über unsere laufen sie in keinem Fall: JR Soft erhält nichts. Ob die Übertragung stattfindet, hängt von der Android-Version und vom Hersteller ab, daher können wir sie nicht garantieren. Unter Android 7 und 8 wird nichts übertragen.</p>
+<p>Nicht übertragen wird, was nur auf dem alten Handy sinnvoll ist: was die App über dieses Handy gelernt hat (die Einheit des Stroms, seine Ladegrenze und die bereits gesendeten Hinweise), deine Entscheidung zu den Anzeigen und der interne Zustand der Werbung. Auf dem neuen Handy fragt dich die App erneut, was nötig ist.</p>
+
+<h2>Daten, die dein Handy doch verlassen</h2>
+
+<h3>Werbung: Google AdMob</h3>
+<p>Die App zeigt dezente Werbung, ausgeliefert vom Werbe-SDK von Google (AdMob): ein Banner am unteren Rand der Bildschirme Verlauf und Zustand sowie native Anzeigen mit der Kennzeichnung „Anzeige“ zwischen den Ladevorgängen im Verlauf und am Ende der Details eines Ladevorgangs. Es gibt nie Vollbildanzeigen und auch keine Anzeigen im Akkustatus, im Ratgeber, in den Hinweisen, den Widgets oder den Einstellungen. Für die Werbung deklariert die App die Berechtigung <code>com.google.android.gms.permission.AD_ID</code>, die Zugriff auf die Werbe-ID von Android gibt; diese ID lässt sich unter <em>Android-Einstellungen → Google → Anzeigen</em> (oder <em>Einstellungen → Datenschutz → Anzeigen</em>, je nach Handy) zurücksetzen und löschen.</p>
+<p>Neben der Werbe-ID erhebt das AdMob-SDK die App-Set-ID (app set ID), die Interaktionen mit der App und mit den Anzeigen sowie Diagnosedaten (Startzeit, Hänger und Energieverbrauch). Google kann deine IP-Adresse nutzen, um einen ungefähren Standort zu schätzen, etwa auf Ebene einer Stadt. Google nutzt diese Daten, um Werbung auszuliefern und zu messen, für Statistiken und zur Betrugsvermeidung, gemäß seiner eigenen Richtlinie. Auf Handys, die sie haben, kann das SDK auch die Werbefunktionen von Android (Privacy Sandbox) nutzen, die du in den Datenschutzeinstellungen von Android verwalten kannst.</p>
+<p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz sowie überall dort, wo das Gesetz es verlangt, zeigt die App das Einwilligungsformular von Google (UMP), bevor personalisierte Werbung ausgeliefert wird. Du kannst deine Entscheidung jederzeit unter <em>Einstellungen → Datenschutzoptionen für Anzeigen</em> ändern.</p>
+<p>Die Einwilligungsmeldung für Anzeigen zeigt Google mit einem Text an, der für alle seine Werbepartner gleich ist, und deshalb erwähnt sie den genauen Standort. Laut Google nutzt sein Werbe-SDK nur den ungefähren Standort, der sich aus der IP-Adresse ableiten lässt, und diese App übergibt ihm keinen Standort. Du kannst diese Nutzung unter „Optionen verwalten“ ablehnen.</p>
+<p><strong>Die Daten deines Akkus gelangen nie zur Werbung.</strong> Die Anzeigenanfrage wird ohne einen einzigen deiner Messwerte, Ladevorgänge oder Einstellungen gesendet. Wenn du die Einwilligung ablehnst, siehst du nicht personalisierte oder eingeschränkte Werbung, und die App funktioniert genau gleich: Keine Funktion ist gesperrt.</p>
+
+<h3>Bewerten, teilen und uns schreiben</h3>
+<p>Wenn du die App bewertest, gehört das Bewertungsfenster zu Google Play, und Google erhält die Bewertung mit deinem Konto, gemäß seiner Richtlinie. „App teilen“ übergibt einen Link an die App, die du auswählst. Wenn du uns über „Schreib uns“ schreibst, verschickst du die E-Mail selbst aus deiner E-Mail-App, und wir erhalten deine Adresse und das, was du uns mitteilst.</p>
+
+<h3>IP-Adresse</h3>
+<p>Wie bei jeder App, die sich mit dem Internet verbindet, erhalten die Server von Google deine IP-Adresse, wenn Anzeigen angefordert werden. Die App verbindet sich mit keinem anderen Server.</p>
+
+<h2>Berechtigungen, die die App anfordert</h2>
+<table>
+  <tr><th>Berechtigung</th><th>Wofür</th></tr>
+  <tr><td>Benachrichtigungen (optional)</td><td>Die Hinweise, die du auswählst: beim Erreichen des von dir festgelegten Ladestands (standardmäßig 80 %), bei hoher Temperatur, bei niedrigem Akkustand und „seit Stunden bei 100 %“, sowie die Statusbenachrichtigung, wenn du sie aktivierst. Sie wird mit einer Erklärung angefragt, und du kannst sie in den Android-Einstellungen entziehen; ohne sie funktioniert die App, gibt aber keine Hinweise.</td></tr>
+  <tr><td>Beim Start des Handys ausführen</td><td>Die Messungen im Hintergrund und die Hinweise nach einem Neustart des Handys neu planen.</td></tr>
+  <tr><td>Handy kurz aktiv halten</td><td>Wird von der Android-Bibliothek genutzt, die die Messungen im Hintergrund durchführt (WorkManager), um jede kurze Messung abzuschließen.</td></tr>
+  <tr><td>Internet und Netzwerkstatus</td><td>Die Werbung.</td></tr>
+  <tr><td>Werbe-ID und Werbefunktionen von Android</td><td>Die Werbung (siehe oben).</td></tr>
+</table>
+<p>Die App hat keinen dauerhaften Vordergrunddienst: Die Überwachung im Hintergrund besteht aus kurzen Aufgaben, die Android plant.</p>
+
+<h2>Beteiligte Dritte</h2>
+<table>
+  <tr><th>Dienst</th><th>Wofür</th><th>Seine Richtlinie</th></tr>
+  <tr><td>Google AdMob</td><td>Werbung und Einwilligungsformular</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+  <tr><td>Google Play</td><td>Die Bewertung in der App sowie die Links unter „Weitere Apps“ und „App teilen“, nur wenn du sie nutzt</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>Übermittlungen außerhalb Europas</h2>
+<p>Google (AdMob) kann Daten außerhalb des Europäischen Wirtschaftsraums verarbeiten. Google LLC ist dem EU-US-Datenschutzrahmen (Data Privacy Framework), dessen Erweiterung für das Vereinigte Königreich und dem Rahmen Schweiz-USA beigetreten.</p>
+
+<h2>Rechtsgrundlage und Speicherdauer</h2>
+<p><strong>Rechtsgrundlage.</strong> Was auf deinem Handy verarbeitet wird, gelangt nicht zu JR Soft: Deine Messwerte, Ladevorgänge, Tests und Einstellungen werden gespeichert, damit die App das tut, worum du sie bittest (Art. 6 Abs. 1 lit. b DSGVO). Für das, was das Handy doch verlässt: (1) personalisierte Werbung und die Nutzung des Gerätespeichers zu Werbezwecken im EWR, im Vereinigten Königreich und in der Schweiz: deine Einwilligung, die du im Formular von Google erteilst oder verweigerst und unter <em>Einstellungen → Datenschutzoptionen für Anzeigen</em> widerrufen kannst (Art. 6 Abs. 1 lit. a DSGVO und Art. 22 Abs. 2 des spanischen Gesetzes LSSI-CE); (2) nicht personalisierte Werbung, ihre Messung, die technischen Protokolle und die Betrugsvermeidung: das berechtigte Interesse, eine kostenlose App zu finanzieren, dafür zu sorgen, dass sie gut funktioniert, und sie vor Betrug zu schützen (Art. 6 Abs. 1 lit. f DSGVO); (3) wenn du uns schreibst: das berechtigte Interesse, dir zu antworten und dein Anliegen zu klären (Art. 6 Abs. 1 lit. f DSGVO). Google verarbeitet die AdMob-Daten als eigenständiger Verantwortlicher, nach seinen eigenen Richtlinien.</p>
+<p>Die auf deinem Handy gespeicherten Daten bleiben dort, bis du sie löschst, die App deinstallierst oder ihre Daten löschst. Der Verlauf hat keine Begrenzung in Tagen: Er wächst nur langsam, weil er höchstens einen Messwert alle 4 Minuten speichert. Diese App bewahrt außerhalb deines Handys keine Daten auf, außer den Nachrichten, die du uns schickst; diese werden gelöscht, sobald das Anliegen erledigt ist, spätestens ein Jahr nach ihrem Eingang; Google bewahrt seine Daten gemäß seinen Richtlinien auf.</p>
+
+<h2>Sicherheit</h2>
+<p>Was die App speichert, liegt in ihrem privaten Speicher, auf den Android anderen Apps keinen Zugriff gewährt, und wird nicht in die Cloud-Sicherung hochgeladen. Die App hat keine eigenen Server oder Konten, die von einem Datenleck betroffen sein könnten, und empfängt aus dem Internet keine Daten außer den Anzeigen. Die exportierte Datei wird in einem privaten Ordner der App erstellt und verlässt ihn nur, wenn du sie teilst. Die Verbindungen des Werbe-SDK von Google sind verschlüsselt (TLS). Die Nachrichten, die du uns schickst, werden in einem E-Mail-Konto aufbewahrt, auf das nur JR Soft zugreift, und innerhalb der oben genannten Fristen gelöscht.</p>
+
+<h2>Deine Rechte</h2>
+<p>Wenn du im Europäischen Wirtschaftsraum, im Vereinigten Königreich oder in der Schweiz wohnst, hast du nach der DSGVO (oder dem entsprechenden Gesetz deines Landes) das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. In der Praxis, und da diese App außerhalb deines Handys keine Daten speichert, die mit deiner Person verknüpft sind:</p>
+<ul>
+  <li><strong>Auskunft und Datenübertragbarkeit:</strong> Alles, was die App speichert, siehst du in ihr (Verlauf, Zustand und der Ladegerätetest), und du kannst es mit „Verlauf exportieren (CSV)“ mitnehmen.</li>
+  <li><strong>Berichtigung und Löschung:</strong> Du kannst die Nennkapazität ändern oder entfernen, jeden Ladegerätetest löschen, alle Daten der App in den Android-Einstellungen löschen oder sie deinstallieren. Die Werbe-ID wird in den Android-Einstellungen zurückgesetzt oder gelöscht.</li>
+  <li><strong>Widerspruch und Widerruf der Einwilligung:</strong> <em>Einstellungen → Datenschutzoptionen für Anzeigen</em>; und die Hinweise in der App selbst oder in den Benachrichtigungseinstellungen von Android.</li>
+</ul>
+<p>Die Daten, die die Bibliothek von Google erhebt, verwaltet Google, und die Rechte daran machst du gegenüber Google geltend: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Du kannst dich auch bei der spanischen Datenschutzbehörde (<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>) oder bei der Datenschutzbehörde deines Landes beschweren (Art. 77 DSGVO).</p>
+
+<h2 id="usa">Einwohner der USA</h2>
+<p>Wenn du in einem US-Bundesstaat mit eigenem Datenschutzgesetz lebst (zum Beispiel Kalifornien, Colorado, Connecticut, Texas oder Virginia), hast du das Recht zu verlangen, dass deine personenbezogenen Daten nicht verkauft oder für zielgerichtete Werbung weitergegeben werden. Das kannst du in der App tun: <em>Einstellungen → Datenschutzoptionen für Anzeigen</em> → die Option, deine Daten nicht zu verkaufen oder weiterzugeben. Ab dann siehst du nicht personalisierte oder eingeschränkte Werbung. Die Messwerte deines Akkus, deine Ladevorgänge und deine Einstellungen bleiben auf deinem Handy und werden an niemanden gesendet; für die Anzeigen nutzt das SDK von Google Gerätekennungen und einen ungefähren Standort (auf Stadtebene). Für jede andere Anfrage zu deinen Daten schreib uns an <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+<p>Du kannst uns auch fragen, welche Daten wir über dich haben, oder verlangen, dass wir sie löschen oder berichtigen, ohne dass wir dich deshalb schlechter behandeln. In den letzten 12 Monaten waren die Kategorien, die das SDK von Google für Werbung erheben konnte: Kennungen (des Geräts und für Werbung), Aktivität in der App (Interaktionen mit den Anzeigen) und ein ungefährer, aus der IP-Adresse abgeleiteter Standort; sensible Daten werden nicht erhoben. JR Soft bewahrt nur die E-Mails auf, die du an JR Soft schickst. Diese Erklärung wird mindestens einmal im Jahr überprüft.</p>
+
+<h2 id="brasilien">Einwohner Brasiliens</h2>
+<p>Wenn du in Brasilien lebst, gewährt dir das Allgemeine Datenschutzgesetz (LGPD, Gesetz 13.709/2018) unter anderem das Recht auf Bestätigung und Auskunft, Berichtigung, Anonymisierung oder Löschung, Datenübertragbarkeit, Information darüber, mit wem deine Daten geteilt werden, und Widerruf der Einwilligung (Art. 18). Da JR Soft außerhalb deines Handys keine Daten von dir speichert, übst du sie so aus, wie unter „Deine Rechte“ beschrieben; die Rechte an den Werbedaten gegenüber Google, das sie mit eigenen Garantien außerhalb Brasiliens verarbeiten kann. Die Werbung stützt sich auf das berechtigte Interesse, eine kostenlose App zu finanzieren (Art. 7 IX). Du kannst uns an <a href="mailto:demual@gmail.com">demual@gmail.com</a> schreiben oder dich bei der ANPD (Autoridade Nacional de Proteção de Dados) beschweren.</p>
+
+<h2>Minderjährige</h2>
+<p>Aguantín ist für Erwachsene gedacht und richtet sich nicht an Personen unter 18 Jahren. Wir erheben nicht wissentlich Daten von Minderjährigen; die technischen Daten, die AdMob sendet, sind die oben beschriebenen.</p>
+
+<h2>Was Aguantín nicht ist</h2>
+<p>„Akkuzustand“ bezieht sich auf den Akku des Handys, nicht auf deine Gesundheit: Aguantín hat keine Gesundheitsfunktion. Kapazitäten, Zyklen, Strom und Prognosen sind Schätzungen auf Grundlage dessen, was jedes Handy liefert, keine Messungen des Herstellers. Samsung und Pixel sind Marken ihrer jeweiligen Inhaber; Aguantín erklärt nur, wo sich deren Einstellungen befinden, und ist nicht mit ihnen verbunden.</p>
+
+<h2>Änderungen dieser Erklärung</h2>
+<p>Wenn sich diese Erklärung wesentlich ändert, wird die neue Fassung unter derselben Adresse mit einem anderen Aktualisierungsdatum veröffentlicht.</p>
+
+<footer>
+<p>Aguantín · JR Soft (Javier Román Sáez) · <code>com.jrsoft.bateria</code> · Kontakt: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Andere Sprachen</a></p>
+</footer>
+
+</body>
+</html>

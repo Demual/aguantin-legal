@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aguantín · Política de Privacidade</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1b16; background: #fff8f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece0d8; background: #1a120e; }
+    td, th { border-color: #444 !important; }
+    a { color: #ffb693; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8b3a0f; }
+  @media (prefers-color-scheme: dark) { h2 { color: #ffb693; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-inline-start: 4px solid #8b3a0f; padding-block: .5rem; padding-inline: 1rem 0; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidade</h1>
+<p class="fecha">Aplicativo Aguantín (<code>com.jrsoft.bateria</code>) · Última atualização: 17 de novembro de 2026</p>
+
+<p class="clave"><strong>Em uma frase:</strong> este aplicativo não tem contas de usuário nem servidor, e as leituras da sua bateria, o seu histórico de recargas, os seus testes de carregadores e as suas configurações não saem do seu celular (a não ser que você mesmo os passe para um celular novo ou exporte o histórico). Só a publicidade envia dados, e quem faz isso é a biblioteca do Google.</p>
+
+<p>A versão em espanhol é a versão de referência desta política; esta é uma tradução da mesma versão.</p>
+
+<h2>Quem é o controlador</h2>
+<p>O controlador dos dados é a JR Soft, nome comercial de Javier Román Sáez, desenvolvedor do aplicativo. Você pode entrar em contato pelo endereço <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>O que este aplicativo NÃO faz</h2>
+<ul>
+  <li>Não há cadastro, conta, usuário nem servidor próprio. O aplicativo funciona inteiramente no seu celular.</li>
+  <li>Não há nenhuma ferramenta própria de análise nem de relatórios de falhas: nem Google Analytics, nem Crashlytics, nem nada parecido. A única biblioteca que envia dados próprios a um terceiro é a da publicidade, explicada abaixo. O aplicativo inclui a biblioteca de configuração remota do Firebase (Remote Config), que serviria para ajustar a publicidade sem publicar uma versão nova, mas ela está desativada: não é iniciada nem se conecta a nenhum servidor. Se algum dia for ativada, esta política será atualizada antes.</li>
+  <li>Não usa a localização do celular, nem a câmera, nem o microfone, nem os seus contatos, nem as suas fotos ou arquivos. Para ler a bateria não é preciso nenhuma permissão: o Android fornece essa informação a qualquer aplicativo.</li>
+  <li>Não verifica quais outros aplicativos você tem nem quanto cada um consome.</li>
+  <li>A JR Soft não guarda os seus dados, exceto os e-mails que você nos envia, e não entrega a ninguém listas ou bancos de dados com eles. Para exibir e medir anúncios, o SDK de anúncios do Google (AdMob) coleta por conta própria identificadores do dispositivo e outros dados técnicos e os envia ao Google, como explicado nesta política. Algumas leis de privacidade dos EUA consideram que permitir que o SDK de um terceiro colete esses dados para publicidade personalizada é “vender” ou “compartilhar” dados pessoais; se você mora lá, pode se opor (veja “<a href="#eua">Residentes nos EUA</a>”).</li>
+</ul>
+
+<h2>Dados que ficam só no seu celular</h2>
+<p>Estas informações são guardadas no armazenamento privado do aplicativo e não saem dele. Elas desaparecem por completo se você desinstalar o aplicativo ou apagar os dados dele nas configurações do Android (Configurações → Apps → Aguantín → Armazenamento → Limpar dados).</p>
+<ul>
+  <li><strong>As leituras da bateria</strong>: a data e a hora, o nível, se está carregando, o tipo de carregador (de tomada, USB ou sem fio), a temperatura, a tensão, a corrente aproximada e o contador de carga do celular. Com o aplicativo fechado, elas são feitas em segundo plano, mais ou menos a cada 15 minutos e com mais frequência durante a recarga.</li>
+  <li><strong>As suas recargas</strong>: quando cada uma começou e terminou, de que nível a que nível, com qual carregador, a temperatura e a corrente mais altas, e quanto entrou.</li>
+  <li><strong>A saúde estimada</strong>: a capacidade que o aplicativo calcula a partir das suas recargas, os ciclos (os informados pelo Android 14 ou posterior, se o fabricante os preencher, e os contados pelo aplicativo) e a capacidade original, só se você a digitar.</li>
+  <li><strong>Os seus testes de carregadores</strong>: o nome que você dá a eles e o que cada um mediu (corrente e potência médias, tensão, nível e duração). Eles são apagados um por um no aplicativo.</li>
+  <li><strong>As suas configurações</strong>: o estilo, o tema, a unidade de temperatura, quais alertas você quer e em que nível ou temperatura, e se você quer a notificação com o status.</li>
+  <li><strong>O que o aplicativo aprende sobre este celular</strong>: em que unidade e com que sinal ele informa a corrente, o limite de carga que já se viu nele (por exemplo, se para em 80%) e quais alertas já foram enviados, para não repeti-los.</li>
+  <li>A data da última vez em que pedimos que você avaliasse o aplicativo, para não pedir isso mais de uma vez a cada 120 dias.</li>
+  <li>O fabricante e o modelo do celular, que o Guia consulta na hora para mostrar a você os passos da sua marca. Eles não são guardados nem enviados.</li>
+  <li>O país do seu cartão SIM (ou, se não houver, o da região do sistema), que a tela “Mais apps da JR Soft” consulta na hora para mostrar só os apps disponíveis no seu país. Ele não é guardado nem enviado. Os links para o Google Play dessa tela e de “Compartilhar o app” levam uma etiqueta que diz que eles vêm deste aplicativo, sem nenhum dado seu.</li>
+</ul>
+<p><strong>Os alertas, os widgets e o bloco das configurações rápidas</strong> são gerados no próprio celular com esses dados. Nenhum deles passa por servidores: não há notificações enviadas pela internet. Os widgets mostram o seu nível de bateria na tela inicial, à vista de quem olhar o celular.</p>
+
+<h2>Exportar o histórico</h2>
+<p>Se você tocar em “Exportar o histórico (CSV)”, o aplicativo cria no celular um arquivo com as suas leituras e as suas recargas, e o Android deixa você escolher para qual aplicativo enviá-lo (o seu e-mail, a sua nuvem, um app de mensagens…). Quem envia é você, e só para onde você escolher; a partir desse momento, vale a privacidade desse aplicativo. A JR Soft não recebe nada.</p>
+
+<h2>Backups, troca de celular e o que não é transferido</h2>
+<p>O backup do Android na nuvem (o da sua Conta do Google) está desativado para os dados deste aplicativo: nenhum deles é enviado. O Android guarda, sim, na sua conta a lista dos apps que você tinha instalados, para instalá-los de novo, mas essa lista é gerenciada pelo Google e não contém dados do aplicativo.</p>
+<p>Se, ao configurar um celular novo, você copiar os seus dados diretamente do antigo, com ou sem cabo, o histórico, as recargas, os testes de carregadores e as configurações podem passar para o celular novo. Essa transferência é pedida por você e feita pelo Android, com a ferramenta dele ou com a do fabricante do celular, e nas condições deles. Segundo a documentação do Android, ela vai de um celular para o outro sem passar por servidores. Em nenhum caso passa pelos nossos: a JR Soft não recebe nada. Se ela acontece ou não depende da versão do Android e do fabricante, por isso não podemos garanti-la. No Android 7 e 8, nada é transferido.</p>
+<p>Não é transferido o que só serve no celular antigo: o que o aplicativo aprendeu sobre aquele celular (a unidade da corrente, o limite de carga dele e os alertas já enviados), a sua escolha sobre os anúncios e o estado interno da publicidade. No celular novo, o aplicativo vai perguntar de novo o que for necessário.</p>
+
+<h2>Dados que saem do celular</h2>
+
+<h3>Publicidade: Google AdMob</h3>
+<p>O aplicativo exibe publicidade discreta, fornecida pelo SDK de publicidade do Google (AdMob): um banner no rodapé das telas Histórico e Saúde, e anúncios nativos, com a etiqueta “Anúncio”, entre as recargas do histórico e no final do detalhe de uma recarga. Nunca há anúncios em tela cheia, nem no status da bateria, nem no Guia, nem nos alertas, nos widgets ou nas configurações. Para a publicidade, o aplicativo declara a permissão <code>com.google.android.gms.permission.AD_ID</code>, que dá acesso ao ID de publicidade do Android; esse identificador pode ser redefinido e excluído em <em>Configurações do Android → Google → Anúncios</em> (ou <em>Configurações → Privacidade → Anúncios</em>, dependendo do celular).</p>
+<p>Além do ID de publicidade, o SDK do AdMob coleta o identificador do conjunto de apps (app set ID), as interações com o aplicativo e com os anúncios, e dados de diagnóstico (tempo de inicialização, travamentos e consumo de energia). O Google pode usar o seu endereço IP para estimar uma localização aproximada, na escala de uma cidade. O Google usa esses dados para exibir e medir a publicidade, para estatísticas e para prevenir fraudes, de acordo com a política dele. Nos celulares que os têm, o SDK também pode usar os recursos de publicidade do Android (Privacy Sandbox), que você pode gerenciar nas configurações de privacidade do Android.</p>
+<p>No Espaço Econômico Europeu, no Reino Unido e na Suíça, e onde a lei exigir, o aplicativo mostra o formulário de consentimento do Google (UMP) antes de exibir publicidade personalizada. Você pode mudar a sua escolha quando quiser em <em>Configurações → Opções de privacidade dos anúncios</em>.</p>
+<p>A mensagem de consentimento dos anúncios é exibida pelo Google com um texto comum a todos os seus parceiros de publicidade, e por isso menciona a geolocalização precisa. Segundo o Google, o SDK de anúncios dele só usa a localização aproximada deduzida do endereço IP, e este aplicativo não passa nenhuma localização para ele. Você pode recusar esse uso em “Gerenciar opções”.</p>
+<p><strong>Os dados da sua bateria nunca chegam à publicidade.</strong> A solicitação de anúncio sai sem nenhuma leitura, recarga ou configuração sua. Se você recusar o consentimento, verá publicidade não personalizada ou limitada e o aplicativo vai funcionar exatamente igual: não há nenhuma função bloqueada.</p>
+
+<h3>Avaliar, compartilhar e falar conosco</h3>
+<p>Se você avaliar o aplicativo, a janela de avaliação é do Google Play e a avaliação é recebida pelo Google com a sua conta, de acordo com a política dele. “Compartilhar o app” entrega um link ao aplicativo que você escolher. Se você nos escrever com “Fale conosco”, quem envia o e-mail é você, pelo seu aplicativo de e-mail, e recebemos o seu endereço e o que você nos contar.</p>
+
+<h3>Endereço IP</h3>
+<p>Como em qualquer aplicativo que se conecta à internet, os servidores do Google recebem o seu endereço IP quando os anúncios são solicitados. O aplicativo não se conecta a nenhum outro servidor.</p>
+
+<h2>Permissões que o aplicativo solicita</h2>
+<table>
+  <tr><th>Permissão</th><th>Para quê</th></tr>
+  <tr><td>Notificações (opcional)</td><td>Os alertas que você escolher: ao chegar ao nível de carga que você definir (80% por padrão), de temperatura alta, de bateria fraca e de “está em 100% há horas”, e a notificação com o status, se você ativá-la. É solicitada com uma explicação e você pode removê-la nas configurações do Android; sem ela, o aplicativo funciona, mas não avisa.</td></tr>
+  <tr><td>Executar ao iniciar o celular</td><td>Programar de novo as leituras em segundo plano e os alertas depois que o celular é reiniciado.</td></tr>
+  <tr><td>Manter o celular ativo por um momento</td><td>É usada pela biblioteca do Android que faz as leituras em segundo plano (WorkManager), para concluir cada leitura curta.</td></tr>
+  <tr><td>Internet e estado da rede</td><td>A publicidade.</td></tr>
+  <tr><td>ID de publicidade e recursos de publicidade do Android</td><td>A publicidade (veja acima).</td></tr>
+</table>
+<p>O aplicativo não tem nenhum serviço permanente em primeiro plano: o acompanhamento em segundo plano consiste em tarefas curtas programadas pelo Android.</p>
+
+<h2>Terceiros envolvidos</h2>
+<table>
+  <tr><th>Serviço</th><th>Para quê</th><th>Política dele</th></tr>
+  <tr><td>Google AdMob</td><td>Publicidade e formulário de consentimento</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+  <tr><td>Google Play</td><td>A avaliação dentro do app, e os links de “Mais apps” e “Compartilhar o app”, só se você os usar</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>Transferências para fora da Europa</h2>
+<p>O Google (AdMob) pode tratar dados fora do Espaço Econômico Europeu. A Google LLC aderiu à Estrutura de Privacidade de Dados UE-EUA (Data Privacy Framework), à sua extensão para o Reino Unido e à estrutura Suíça-EUA.</p>
+
+<h2>Base legal e conservação</h2>
+<p><strong>Base jurídica.</strong> O que é processado no seu celular não chega à JR Soft: as suas leituras, as suas recargas, os seus testes e as suas configurações são guardados para que o aplicativo faça o que você pede (art. 6.1.b do GDPR). Para o que sai dele: (1) publicidade personalizada e uso do armazenamento do dispositivo para fins publicitários no EEE, no Reino Unido e na Suíça: o seu consentimento, que você dá ou recusa no formulário do Google e pode retirar em <em>Configurações → Opções de privacidade dos anúncios</em> (art. 6.1.a do GDPR e art. 22.2 da LSSI-CE espanhola); (2) publicidade não personalizada, a sua medição, os registros técnicos e a prevenção de fraudes: o legítimo interesse em financiar um aplicativo gratuito, em que ele funcione bem e em protegê-lo contra fraudes (art. 6.1.f do GDPR); (3) se você nos escrever: o legítimo interesse em responder e resolver o que você nos contar (art. 6.1.f do GDPR). O Google trata os dados do AdMob como controlador independente, com as suas próprias políticas.</p>
+<p>Os dados guardados no seu celular permanecem lá até que você os apague, desinstale o aplicativo ou apague os dados dele. O histórico não tem limite de dias: cresce pouco, porque guarda no máximo uma leitura a cada 4 minutos. Este aplicativo não conserva nenhum dado fora do seu celular, exceto as mensagens que você nos envia, que são apagadas quando o assunto é resolvido e, no máximo, um ano depois de recebidas; o Google conserva os dele de acordo com as suas políticas.</p>
+
+<h2>Segurança</h2>
+<p>O que o aplicativo guarda fica no armazenamento privado dele, que o Android não deixa outros aplicativos acessarem, e não é enviado ao backup na nuvem. O aplicativo não tem servidores nem contas próprias que possam sofrer um vazamento, e não recebe dados da internet que não sejam os anúncios. O arquivo que você exporta é criado em uma pasta privada do aplicativo e só sai dela quando você o compartilha. As conexões do SDK de anúncios do Google são criptografadas (TLS). As mensagens que você nos envia ficam guardadas em uma conta de e-mail à qual só a JR Soft tem acesso, e são apagadas nos prazos indicados acima.</p>
+
+<h2>Seus direitos</h2>
+<p>Se você reside no Espaço Econômico Europeu, no Reino Unido ou na Suíça, o GDPR (ou a lei equivalente do seu país) reconhece a você os direitos de acesso, retificação, eliminação, limitação, portabilidade e oposição. Na prática, e como este aplicativo não guarda nenhum dado associado à sua pessoa fora do seu celular:</p>
+<ul>
+  <li><strong>Acesso e portabilidade:</strong> tudo o que o aplicativo guarda você vê nele (Histórico, Saúde e o teste de carregadores), e pode levar com você usando “Exportar o histórico (CSV)”.</li>
+  <li><strong>Retificação e eliminação:</strong> você pode mudar ou remover a capacidade original, apagar cada teste de carregador, apagar todos os dados do aplicativo nas configurações do Android ou desinstalá-lo. O ID de publicidade é redefinido ou excluído nas configurações do Android.</li>
+  <li><strong>Oposição e retirada do consentimento:</strong> <em>Configurações → Opções de privacidade dos anúncios</em>; e os alertas, no próprio aplicativo ou nas configurações de notificações do Android.</li>
+</ul>
+<p>Os dados coletados pela biblioteca do Google são gerenciados pelo Google, e os direitos sobre eles são exercidos perante o Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Você também pode apresentar uma reclamação à <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> ou à autoridade de proteção de dados do seu país (GDPR, art. 77).</p>
+
+<h2 id="eua">Residentes nos EUA</h2>
+<p>Se você mora em um estado dos EUA com lei de privacidade própria (por exemplo, Califórnia, Colorado, Connecticut, Texas ou Virgínia), tem o direito de pedir que os seus dados pessoais não sejam vendidos nem compartilhados para publicidade direcionada. Você pode fazer isso no aplicativo: <em>Configurações → Opções de privacidade dos anúncios</em> → a opção para não vender nem compartilhar os seus dados. A partir daí, você verá publicidade não personalizada ou limitada. As leituras da sua bateria, as suas recargas e as suas configurações ficam no seu celular e não são enviadas a ninguém; para os anúncios, o SDK do Google usa identificadores do dispositivo e uma localização aproximada (no nível da cidade). Para qualquer outro pedido sobre os seus dados, escreva para <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+<p>Você também pode nos pedir para saber quais dados seus temos, para apagá-los ou para corrigi-los, sem que por isso tratemos você de forma pior. Nos últimos 12 meses, as categorias que o SDK do Google pode ter coletado para publicidade são identificadores (do dispositivo e de publicidade), atividade no aplicativo (interações com os anúncios) e uma localização aproximada deduzida do IP; não são coletados dados sensíveis. A JR Soft só conserva os e-mails que você envia a ela. Esta política é revisada pelo menos uma vez por ano.</p>
+
+<h2 id="brasil">Residentes no Brasil</h2>
+<p>Se você mora no Brasil, a Lei Geral de Proteção de Dados Pessoais (LGPD, Lei nº 13.709/2018) reconhece a você, entre outros, os direitos de confirmação e acesso, correção, anonimização ou eliminação, portabilidade, informação sobre com quem os seus dados são compartilhados e revogação do consentimento (art. 18). Como a JR Soft não guarda dados seus fora do seu celular, eles são exercidos como explicado em “Seus direitos”; os dos dados de publicidade, perante o Google, que pode tratá-los fora do Brasil com as suas próprias garantias. A publicidade se baseia no legítimo interesse em financiar um aplicativo gratuito (art. 7º, IX). Você pode nos escrever em <a href="mailto:demual@gmail.com">demual@gmail.com</a> ou apresentar uma reclamação à ANPD (Autoridade Nacional de Proteção de Dados).</p>
+
+<h2>Menores</h2>
+<p>O Aguantín foi pensado para adultos e não é direcionado a menores de 18 anos. Não coletamos intencionalmente dados de menores; os dados técnicos que o AdMob envia são os descritos acima.</p>
+
+<h2>O que o Aguantín não é</h2>
+<p>“Saúde da bateria” se refere à bateria do celular, não à sua saúde: o Aguantín não tem nenhuma função de saúde. As capacidades, os ciclos, a corrente e as previsões são estimativas feitas com o que cada celular informa, não medições do fabricante. Samsung e Pixel são marcas dos seus proprietários; o Aguantín só explica onde ficam as configurações deles e não é afiliado a eles.</p>
+
+<h2>Alterações nesta política</h2>
+<p>Se esta política mudar de forma substancial, a nova versão será publicada neste mesmo endereço com uma data de atualização diferente.</p>
+
+<footer>
+<p>Aguantín · JR Soft (Javier Román Sáez) · <code>com.jrsoft.bateria</code> · Contato: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Outros idiomas</a></p>
+</footer>
+
+</body>
+</html>

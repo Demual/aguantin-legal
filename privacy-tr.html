@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aguantín · Gizlilik Politikası</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1b16; background: #fff8f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece0d8; background: #1a120e; }
+    td, th { border-color: #444 !important; }
+    a { color: #ffb693; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8b3a0f; }
+  @media (prefers-color-scheme: dark) { h2 { color: #ffb693; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-inline-start: 4px solid #8b3a0f; padding-block: .5rem; padding-inline: 1rem 0; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Gizlilik Politikası</h1>
+<p class="fecha">Aguantín uygulaması (<code>com.jrsoft.bateria</code>) · Son güncelleme: 17 Kasım 2026</p>
+
+<p class="clave"><strong>Tek cümleyle:</strong> bu uygulamada kullanıcı hesabı da sunucu da yoktur; pil ölçümlerin, şarj geçmişin, şarj cihazı testlerin ve ayarların telefonundan çıkmaz (onları kendin yeni bir telefona taşıman veya geçmişi dışa aktarman hariç). Yalnızca reklamlar veri gönderir ve bunu Google'ın kitaplığı yapar.</p>
+
+<p>Bu politikanın referans sürümü İspanyolca sürümdür; bu metin aynı sürümün çevirisidir.</p>
+
+<h2>Veri sorumlusu kim</h2>
+<p>Veri sorumlusu, uygulamanın geliştiricisi Javier Román Sáez'in ticari adı olan JR Soft'tur. Bize <a href="mailto:demual@gmail.com">demual@gmail.com</a> adresinden ulaşabilirsin.</p>
+
+<h2>Bu uygulamanın YAPMADIKLARI</h2>
+<ul>
+  <li>Kayıt, hesap, kullanıcı profili veya kendimize ait bir sunucu yoktur. Uygulama tamamen telefonunda çalışır.</li>
+  <li>Kendimize ait hiçbir analiz veya çökme raporlama aracı yoktur: ne Google Analytics ne Crashlytics ne de benzerleri. Üçüncü bir tarafa kendi verilerini gönderen tek kitaplık reklam kitaplığıdır; aşağıda açıklanıyor. Uygulama, Firebase'in uzaktan yapılandırma kitaplığını (Remote Config) içerir; bu kitaplık yeni bir sürüm yayımlamadan reklamları ayarlamaya yarayabilirdi, ancak devre dışıdır: başlamaz ve hiçbir sunucuya bağlanmaz. Bir gün etkinleştirilirse bu politika önceden güncellenecektir.</li>
+  <li>Telefonun konumunu, kamerayı, mikrofonu, kişilerini, fotoğraflarını veya dosyalarını kullanmaz. Pil bilgisini okumak için hiçbir izin gerekmez: Android bu bilgiyi her uygulamaya verir.</li>
+  <li>Başka hangi uygulamaların olduğuna veya her birinin ne kadar harcadığına bakmaz.</li>
+  <li>JR Soft, bize gönderdiğin e-postalar dışında verilerini saklamaz ve bunları içeren listeleri veya veritabanlarını kimseye vermez. Reklamları göstermek ve ölçmek için Google'ın reklam SDK'sı (AdMob), bu politikada açıklandığı gibi, cihaz tanımlayıcılarını ve diğer teknik verileri kendi başına toplar ve Google'a gönderir. ABD'deki bazı gizlilik yasaları, bir üçüncü tarafın SDK'sının bu verileri kişiselleştirilmiş reklam için toplamasına izin vermeyi kişisel verilerin “satılması” veya “paylaşılması” sayar; orada yaşıyorsan buna itiraz edebilirsin (bkz. “<a href="#abd">ABD'de yaşayanlar</a>”).</li>
+</ul>
+
+<h2>Yalnızca telefonunda kalan veriler</h2>
+<p>Bu bilgiler uygulamanın özel depolama alanında saklanır ve uygulamadan çıkmaz. Uygulamayı kaldırırsan veya verilerini Android ayarlarından silersen tamamen yok olur (Ayarlar → Uygulamalar → Aguantín → Depolama → Verileri temizle).</p>
+<ul>
+  <li><strong>Pil ölçümleri</strong>: tarih ve saat, seviye, şarj olup olmadığı, şarj cihazının türü (duvar şarj cihazı, USB veya kablosuz), sıcaklık, voltaj, yaklaşık akım ve telefonun şarj sayacı. Uygulama kapalıyken arka planda, yaklaşık 15 dakikada bir ve şarj sırasında daha sık alınır.</li>
+  <li><strong>Şarjların</strong>: her birinin ne zaman başlayıp bittiği, hangi seviyeden hangi seviyeye çıktığı, hangi şarj cihazıyla yapıldığı, en yüksek sıcaklık ve akım ve ne kadar şarj girdiği.</li>
+  <li><strong>Tahmini sağlık</strong>: uygulamanın şarjlarından hesapladığı kapasite, döngüler (üretici dolduruyorsa Android 14 veya sonrasının bildirdikleri ve uygulamanın saydıkları) ve yalnızca sen girersen fabrika kapasitesi.</li>
+  <li><strong>Şarj cihazı testlerin</strong>: onlara verdiğin ad ve her birinin ölçtükleri (ortalama akım ve güç, voltaj, seviye ve süre). Uygulamadan tek tek silinebilir.</li>
+  <li><strong>Ayarların</strong>: stil, tema, sıcaklık birimi, hangi uyarıları hangi seviyede veya sıcaklıkta istediğin ve durum bildirimini isteyip istemediğin.</li>
+  <li><strong>Uygulamanın bu telefon hakkında öğrendikleri</strong>: akımı hangi birimde ve hangi işaretle verdiği, onda görülen şarj sınırı (örneğin %80'de durup durmadığı) ve tekrarlanmaması için hangi uyarıların zaten gönderildiği.</li>
+  <li>Uygulamayı değerlendirmen en son ne zaman istendiğinin tarihi; böylece bu, 120 günde bir defadan sık istenmez.</li>
+  <li>Telefonun üreticisi ve modeli; Rehber, sana markanın adımlarını göstermek için bunlara o anda bakar. Saklanmaz ve gönderilmez.</li>
+  <li>SIM kartının ülkesi (SIM kart yoksa sistem bölgesinin ülkesi); “JR Soft'un diğer uygulamaları” ekranı, yalnızca ülkende mevcut olan uygulamaları göstermek için buna o anda bakar. Saklanmaz ve gönderilmez. Bu ekrandaki ve “Uygulamayı paylaş” seçeneğindeki Google Play bağlantıları, bu uygulamadan geldiklerini belirten bir etiket taşır; senin hiçbir verini içermez.</li>
+</ul>
+<p><strong>Uyarılar, widget'lar ve hızlı ayarlar kutucuğu</strong> bu verilerle telefonun kendisinde oluşturulur. Hiçbiri sunuculardan geçmez: internetten gönderilen bildirim yoktur. Widget'lar pil seviyeni ana ekranda, telefona bakan herkesin görebileceği şekilde gösterir.</p>
+
+<h2>Geçmişi dışa aktarma</h2>
+<p>“Geçmişi dışa aktar (CSV)” seçeneğine dokunursan uygulama, telefonda ölçümlerini ve şarjlarını içeren bir dosya oluşturur ve Android bu dosyayı hangi uygulamaya göndereceğini seçmene izin verir (e-postan, bulut depolama alanın, bir mesajlaşma uygulaması…). Dosyayı sen gönderirsin ve yalnızca senin seçtiğin yere; o andan itibaren o uygulamanın gizlilik kuralları geçerli olur. JR Soft hiçbir şey almaz.</p>
+
+<h2>Yedeklemeler, telefon değiştirme ve aktarılmayanlar</h2>
+<p>Android'in bulut yedeklemesi (Google hesabındaki) bu uygulamanın verileri için devre dışıdır: hiçbiri yüklenmez. Android, yüklü uygulamalarını yeniden yükleyebilmek için bunların listesini hesabında saklar, ancak bu listeyi Google yönetir ve liste uygulama verisi içermez.</p>
+<p>Yeni bir telefonu kurarken verilerini doğrudan eskisinden, kabloyla veya kablosuz olarak kopyalarsan geçmiş, şarjlar, şarj cihazı testleri ve ayarlar yeni telefona geçebilir. Bu aktarımı sen istersin; Android de kendi aracıyla veya telefon üreticisinin aracıyla ve kendi koşullarıyla yapar. Android belgelerine göre aktarım, sunuculardan geçmeden bir telefondan diğerine gider. Hiçbir durumda bizim sunucularımızdan geçmez: JR Soft hiçbir şey almaz. Aktarımın yapılıp yapılmayacağı Android sürümüne ve üreticiye bağlıdır, bu yüzden bunu garanti edemeyiz. Android 7 ve 8'de hiçbir şey aktarılmaz.</p>
+<p>Yalnızca eski telefonda işe yarayanlar aktarılmaz: uygulamanın o telefon hakkında öğrendikleri (akım birimi, şarj sınırı ve zaten gönderilmiş uyarılar), reklamlarla ilgili seçimin ve reklamların iç durumu. Yeni telefonda uygulama gerekenleri sana yeniden sorar.</p>
+
+<h2>Telefonundan çıkan veriler</h2>
+
+<h3>Reklam: Google AdMob</h3>
+<p>Uygulama, Google'ın reklam SDK'sı (AdMob) tarafından sunulan göze batmayan reklamlar gösterir: Geçmiş ve Sağlık ekranlarının altında bir banner ve geçmişteki şarjların arasında ve bir şarjın ayrıntılarının sonunda “Reklam” etiketli yerel reklamlar. Hiçbir zaman tam ekran reklam yoktur; pil durumunda, Rehber'de, uyarılarda, widget'larda veya ayarlarda da reklam yoktur. Uygulama, reklamlar için Android reklam kimliğine erişim sağlayan <code>com.google.android.gms.permission.AD_ID</code> iznini bildirir; bu kimlik <em>Android Ayarları → Google → Reklamlar</em> (veya telefona göre <em>Ayarlar → Gizlilik → Reklamlar</em>) bölümünden sıfırlanabilir ve silinebilir.</p>
+<p>AdMob SDK'sı reklam kimliğinin yanı sıra uygulama grubu kimliğini (app set ID), uygulamayla ve reklamlarla etkileşimleri ve teşhis verilerini (açılış süresi, donmalar ve enerji tüketimi) toplar. Google, IP adresini kullanarak şehir düzeyinde yaklaşık bir konum tahmin edebilir. Google bu verileri kendi politikasına göre reklam sunmak ve ölçmek, istatistik ve dolandırıcılığı önlemek için kullanır. Bu özelliklere sahip telefonlarda SDK, Android'in reklam özelliklerini (Privacy Sandbox) de kullanabilir; bunları Android'in gizlilik ayarlarından yönetebilirsin.</p>
+<p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de ve yasanın gerektirdiği her yerde uygulama, kişiselleştirilmiş reklam sunmadan önce Google'ın rıza formunu (UMP) gösterir. Seçimini istediğin zaman <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden değiştirebilirsin.</p>
+<p>Reklam rızası mesajını Google, tüm reklam ortakları için ortak olan bir metinle gösterir; bu yüzden mesajda kesin coğrafi konumdan söz edilir. Google'a göre reklam SDK'sı yalnızca IP adresinden çıkarılan yaklaşık konumu kullanır ve bu uygulama ona hiçbir konum iletmez. Bu kullanımı “Seçenekleri yönet” bölümünden reddedebilirsin.</p>
+<p><strong>Pil verilerin asla reklamlara ulaşmaz.</strong> Reklam isteği, ölçümlerinden, şarjlarından veya ayarlarından hiçbirini içermeden gönderilir. Rıza vermeyi reddedersen kişiselleştirilmemiş veya sınırlı reklamlar görürsün ve uygulama tamamen aynı şekilde çalışır: kilitli hiçbir özellik yoktur.</p>
+
+<h3>Değerlendirme, paylaşma ve bize yazma</h3>
+<p>Uygulamayı değerlendirirsen değerlendirme penceresi Google Play'e aittir ve değerlendirmeni Google, kendi politikasına göre hesabınla birlikte alır. “Uygulamayı paylaş”, uygulamanın bağlantısını senin seçtiğin uygulamaya iletir. “Bize yaz” ile bize yazarsan e-postayı kendi e-posta uygulamandan sen gönderirsin ve bize adresin ile anlattıkların ulaşır.</p>
+
+<h3>IP adresi</h3>
+<p>İnternete bağlanan her uygulamada olduğu gibi, reklamlar istendiğinde Google'ın sunucuları IP adresini alır. Uygulama başka hiçbir sunucuya bağlanmaz.</p>
+
+<h2>Uygulamanın istediği izinler</h2>
+<table>
+  <tr><th>İzin</th><th>Ne için</th></tr>
+  <tr><td>Bildirimler (isteğe bağlı)</td><td>Senin seçtiğin uyarılar: belirlediğin şarj seviyesine ulaşıldığında (varsayılan %80), yüksek sıcaklık, düşük pil ve “saatlerdir %100'de” uyarıları ve etkinleştirirsen durum bildirimi. Bir açıklamayla istenir ve Android ayarlarından kaldırabilirsin; bu izin olmadan uygulama çalışır ama uyarı vermez.</td></tr>
+  <tr><td>Telefon açılırken çalıştırma</td><td>Telefon yeniden başlatıldıktan sonra arka plan ölçümlerini ve uyarıları yeniden planlamak.</td></tr>
+  <tr><td>Telefonu kısa süre uyanık tutma</td><td>Arka plan ölçümlerini yapan Android kitaplığı (WorkManager) tarafından, her kısa ölçümü tamamlamak için kullanılır.</td></tr>
+  <tr><td>İnternet ve ağ durumu</td><td>Reklamlar.</td></tr>
+  <tr><td>Reklam kimliği ve Android reklam özellikleri</td><td>Reklamlar (yukarıya bak).</td></tr>
+</table>
+<p>Uygulamanın kalıcı bir ön plan hizmeti yoktur: arka plandaki takip, Android'in planladığı kısa işlerden oluşur.</p>
+
+<h2>İlgili üçüncü taraflar</h2>
+<table>
+  <tr><th>Hizmet</th><th>Ne için</th><th>Politikası</th></tr>
+  <tr><td>Google AdMob</td><td>Reklamlar ve rıza formu</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+  <tr><td>Google Play</td><td>Uygulama içi değerlendirme ile “Diğer uygulamalar” ve “Uygulamayı paylaş” bağlantıları, yalnızca bunları kullanırsan</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>Avrupa dışına aktarımlar</h2>
+<p>Google (AdMob) verileri Avrupa Ekonomik Alanı dışında işleyebilir. Google LLC, AB-ABD Veri Gizliliği Çerçevesi'ne (Data Privacy Framework), bu çerçevenin Birleşik Krallık uzantısına ve İsviçre-ABD çerçevesine katılmıştır.</p>
+
+<h2>Hukuki dayanak ve saklama süresi</h2>
+<p><strong>Hukuki dayanak.</strong> Telefonunda işlenenler JR Soft'a ulaşmaz: ölçümlerin, şarjların, testlerin ve ayarların, uygulamanın ondan istediğini yapabilmesi için saklanır (GDPR md. 6/1-b). Telefondan çıkanlar için: (1) AEA, Birleşik Krallık ve İsviçre'de kişiselleştirilmiş reklam ve cihaz depolama alanının reklam amaçlı kullanımı: Google'ın formunda verdiğin veya vermediğin ve <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden geri alabileceğin rızan (GDPR md. 6/1-a ve İspanyol LSSI-CE Kanunu md. 22/2); (2) kişiselleştirilmemiş reklam, bunun ölçümü, teknik kayıtlar ve dolandırıcılığın önlenmesi: ücretsiz bir uygulamayı finanse etme, iyi çalışmasını sağlama ve onu dolandırıcılığa karşı koruma konusundaki meşru menfaat (GDPR md. 6/1-f); (3) bize yazarsan: sana yanıt verme ve anlattığın konuyu çözme konusundaki meşru menfaat (GDPR md. 6/1-f). Google, AdMob verilerini kendi politikalarına göre bağımsız bir veri sorumlusu olarak işler.</p>
+<p>Telefonunda saklanan veriler, sen onları silene, uygulamayı kaldırana veya verilerini silene kadar kalır. Geçmişin gün sınırı yoktur: az büyür, çünkü en fazla 4 dakikada bir ölçüm kaydeder. Bu uygulama, bize gönderdiğin mesajlar dışında telefonunun dışında hiçbir veri saklamaz; bu mesajlar konu çözüldüğünde ve en geç alındıktan bir yıl sonra silinir; Google kendi verilerini kendi politikalarına göre saklar.</p>
+
+<h2>Güvenlik</h2>
+<p>Uygulamanın sakladıkları, Android'in diğer uygulamaların erişmesine izin vermediği özel depolama alanındadır ve bulut yedeğine yüklenmez. Uygulamanın veri sızıntısına uğrayabilecek kendine ait sunucusu veya hesabı yoktur ve internetten reklamlar dışında veri almaz. Dışa aktardığın dosya, uygulamanın özel bir klasöründe oluşturulur ve yalnızca sen paylaştığında oradan çıkar. Google'ın reklam SDK'sının bağlantıları şifrelidir (TLS). Bize gönderdiğin mesajlar yalnızca JR Soft'un erişebildiği bir e-posta hesabında saklanır ve yukarıdaki sürelerde silinir.</p>
+
+<h2>Hakların</h2>
+<p>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'de yaşıyorsan AB Genel Veri Koruma Tüzüğü (GDPR) veya ülkendeki eşdeğer yasa sana erişim, düzeltme, silme, işlemeyi kısıtlama, veri taşınabilirliği ve itiraz haklarını tanır. Pratikte, bu uygulama telefonunun dışında kişinle ilişkili hiçbir veri saklamadığından:</p>
+<ul>
+  <li><strong>Erişim ve taşınabilirlik:</strong> uygulamanın sakladığı her şeyi uygulamanın içinde görürsün (Geçmiş, Sağlık ve şarj cihazı testi) ve “Geçmişi dışa aktar (CSV)” ile yanında götürebilirsin.</li>
+  <li><strong>Düzeltme ve silme:</strong> fabrika kapasitesini değiştirebilir veya kaldırabilir, her şarj cihazı testini silebilir, uygulamanın tüm verilerini Android ayarlarından silebilir veya uygulamayı kaldırabilirsin. Reklam kimliği Android ayarlarından sıfırlanır veya silinir.</li>
+  <li><strong>İtiraz ve rızanın geri alınması:</strong> <em>Ayarlar → Reklam gizlilik seçenekleri</em>; uyarılar için de uygulamanın kendisi veya Android'in bildirim ayarları.</li>
+</ul>
+<p>Google'ın kitaplığının topladığı verileri Google yönetir ve bunlarla ilgili haklar Google'a karşı kullanılır: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Ayrıca İspanya'nın veri koruma kurumuna (<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>) veya ülkendeki veri koruma kurumuna şikâyette bulunabilirsin (GDPR md. 77).</p>
+
+<h2 id="abd">ABD'de yaşayanlar</h2>
+<p>Kendi gizlilik yasası olan bir ABD eyaletinde yaşıyorsan (örneğin Kaliforniya, Kolorado, Connecticut, Teksas veya Virginia), kişisel verilerinin satılmamasını veya hedefli reklam için paylaşılmamasını isteme hakkın vardır. Bunu uygulamada yapabilirsin: <em>Ayarlar → Reklam gizlilik seçenekleri</em> → verilerinin satılmaması veya paylaşılmaması seçeneği. O andan itibaren kişiselleştirilmemiş veya sınırlı reklamlar görürsün. Pil ölçümlerin, şarjların ve ayarların telefonunda kalır ve kimseye gönderilmez; reklamlar için Google'ın SDK'sı cihaz tanımlayıcılarını ve yaklaşık bir konumu (şehir düzeyinde) kullanır. Verilerinle ilgili diğer her türlü talep için bize <a href="mailto:demual@gmail.com">demual@gmail.com</a> adresinden yaz.</p>
+<p>Ayrıca hakkında hangi verileri tuttuğumuzu öğrenmek, bunları silmemizi veya düzeltmemizi istemek için bize başvurabilirsin; bunu yaptığın için sana daha kötü davranmayız. Son 12 ayda Google'ın SDK'sının reklam için toplayabildiği kategoriler şunlardır: tanımlayıcılar (cihaz ve reklam), uygulama içi etkinlik (reklamlarla etkileşimler) ve IP adresinden çıkarılan yaklaşık konum; hassas veri toplanmaz. JR Soft yalnızca ona gönderdiğin e-postaları saklar. Bu politika en az yılda bir kez gözden geçirilir.</p>
+
+<h2 id="brezilya">Brezilya'da yaşayanlar</h2>
+<p>Brezilya'da yaşıyorsan Genel Veri Koruma Kanunu (LGPD, 13.709/2018 sayılı Kanun) sana, diğerlerinin yanı sıra, teyit ve erişim, düzeltme, anonimleştirme veya silme, taşınabilirlik, verilerinin kimlerle paylaşıldığı hakkında bilgi alma ve rızanı geri alma haklarını tanır (md. 18). JR Soft telefonunun dışında sana ait veri saklamadığı için bu haklar “Hakların” bölümünde açıklandığı şekilde kullanılır; reklam verileriyle ilgili haklar ise, bu verileri kendi güvenceleriyle Brezilya dışında işleyebilen Google'a karşı kullanılır. Reklamlar, ücretsiz bir uygulamayı finanse etme konusundaki meşru menfaate dayanır (md. 7, IX). Bize <a href="mailto:demual@gmail.com">demual@gmail.com</a> adresinden yazabilir veya ANPD'ye (Autoridade Nacional de Proteção de Dados) şikâyette bulunabilirsin.</p>
+
+<h2>Reşit olmayanlar</h2>
+<p>Aguantín yetişkinler için tasarlanmıştır ve 18 yaşından küçüklere yönelik değildir. Reşit olmayanlardan bilerek veri toplamayız; AdMob'un gönderdiği teknik veriler yukarıda açıklananlardır.</p>
+
+<h2>Aguantín ne değildir</h2>
+<p>“Pil sağlığı” telefonun pilini ifade eder, senin sağlığını değil: Aguantín'in hiçbir sağlık özelliği yoktur. Kapasiteler, döngüler, akım ve öngörüler, her telefonun verdiği bilgilere dayanan tahminlerdir; üreticinin ölçümleri değildir. Samsung ve Pixel, sahiplerinin markalarıdır; Aguantín yalnızca bunların ayarlarının nerede olduğunu açıklar ve onlarla bağlantılı değildir.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Bu politika önemli ölçüde değişirse yeni sürüm, farklı bir güncelleme tarihiyle aynı adreste yayımlanır.</p>
+
+<footer>
+<p>Aguantín · JR Soft (Javier Román Sáez) · <code>com.jrsoft.bateria</code> · İletişim: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Diğer diller</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aguantín · Política de privadesa</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1b16; background: #fff8f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece0d8; background: #1a120e; }
+    td, th { border-color: #444 !important; }
+    a { color: #ffb693; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8b3a0f; }
+  @media (prefers-color-scheme: dark) { h2 { color: #ffb693; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-inline-start: 4px solid #8b3a0f; padding-block: .5rem; padding-inline: 1rem 0; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Política de privadesa</h1>
+<p class="fecha">Aplicació Aguantín (<code>com.jrsoft.bateria</code>) · Darrera actualització: 17 de novembre de 2026</p>
+
+<p class="clave"><strong>En una frase:</strong> aquesta aplicació no té comptes d'usuari ni servidor, i les lectures de la teva bateria, el teu historial de càrregues, les teves proves de carregadors i la teva configuració no surten del teu telèfon (tret que tu els passis a un mòbil nou o exportis l'historial). Només la publicitat envia dades, i ho fa la biblioteca de Google.</p>
+
+<p>La versió en castellà és la de referència d'aquesta política; aquesta és una traducció de la mateixa versió.</p>
+
+<h2>Qui és el responsable</h2>
+<p>El responsable del tractament és JR Soft, nom comercial de Javier Román Sáez, desenvolupador de l'aplicació. Pots contactar-hi a <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>El que aquesta aplicació NO fa</h2>
+<ul>
+  <li>No hi ha registre, compte, usuari ni servidor propi. L'aplicació funciona sencera al teu telèfon.</li>
+  <li>No hi ha cap eina pròpia d'analítica ni d'informes d'errors: ni Google Analytics, ni Crashlytics, ni res de semblant. L'única biblioteca que envia dades pròpies a un tercer és la de la publicitat; s'explica més avall. L'aplicació inclou la biblioteca de configuració remota de Firebase (Remote Config), que serviria per ajustar la publicitat sense publicar una versió nova, però està desactivada: no s'inicia ni es connecta a cap servidor. Si algun dia s'activa, abans s'actualitzarà aquesta política.</li>
+  <li>No fa servir la ubicació del telèfon, ni la càmera, ni el micròfon, ni els teus contactes, ni les teves fotos o fitxers. Per llegir la bateria no cal cap permís: Android dona aquesta informació a qualsevol aplicació.</li>
+  <li>No mira quines altres aplicacions tens ni quant gasta cadascuna.</li>
+  <li>JR Soft no desa les teves dades, tret dels correus que ens enviïs, i no lliura a ningú llistes ni bases de dades que les continguin. Per mostrar i mesurar anuncis, l'SDK d'anuncis de Google (AdMob) recull pel seu compte identificadors del dispositiu i altres dades tècniques i els envia a Google, tal com s'explica en aquesta política. Algunes lleis de privadesa dels EUA consideren que deixar que l'SDK d'un tercer reculli aquestes dades per a publicitat personalitzada és «vendre» o «compartir» dades personals; si hi vius, t'hi pots oposar (consulta «<a href="#eua">Residents als EUA</a>»).</li>
+</ul>
+
+<h2>Dades que només es queden al teu telèfon</h2>
+<p>Aquesta informació es desa a l'emmagatzematge privat de l'aplicació i no en surt. Desapareix del tot si desinstal·les l'aplicació o n'esborres les dades des de la configuració d'Android (Configuració → Aplicacions → Aguantín → Emmagatzematge → Esborra les dades).</p>
+<ul>
+  <li><strong>Les lectures de la bateria</strong>: la data i l'hora, el nivell, si s'està carregant, el tipus de carregador (de paret, USB o sense fil), la temperatura, el voltatge, el corrent aproximat i el comptador de càrrega del mòbil. Amb l'aplicació tancada es prenen en segon pla, més o menys cada 15 minuts i més sovint mentre es carrega.</li>
+  <li><strong>Les teves càrregues</strong>: quan va començar i acabar cadascuna, de quin nivell a quin nivell, amb quin carregador, la temperatura i el corrent més alts, i el que hi va entrar.</li>
+  <li><strong>La salut estimada</strong>: la capacitat que calcula l'aplicació a partir de les teves càrregues, els cicles (els que dona Android 14 o posterior, si el fabricant els emplena, i els que compta l'aplicació) i la capacitat de fàbrica, només si l'escrius tu.</li>
+  <li><strong>Les teves proves de carregadors</strong>: el nom que els poses i el que va mesurar cadascuna (corrent i potència mitjans, voltatge, nivell i durada). S'esborren una per una des de l'aplicació.</li>
+  <li><strong>La teva configuració</strong>: l'estil, el tema, la unitat de temperatura, quins avisos vols i a quin nivell o temperatura, i si vols la notificació amb l'estat.</li>
+  <li><strong>El que l'aplicació aprèn d'aquest mòbil</strong>: en quina unitat i amb quin signe dona el corrent, el límit de càrrega que se li ha vist (per exemple, si s'atura al 80 %) i quins avisos ja s'han enviat, per no repetir-los.</li>
+  <li>La data en què se't va demanar per última vegada que valoressis l'aplicació, per no demanar-ho més d'una vegada cada 120 dies.</li>
+  <li>El fabricant i el model del telèfon, que la Guia consulta en aquell moment per mostrar-te els passos de la teva marca. No es desen ni s'envien.</li>
+  <li>El país de la teva targeta SIM (o, si no n'hi ha, el de la regió del sistema), que la pantalla «Més aplicacions de JR Soft» consulta en aquell moment per mostrar només les aplicacions disponibles al teu país. No es desa ni s'envia. Els enllaços a Google Play d'aquesta pantalla i de «Compartir l'app» porten una etiqueta que diu que provenen d'aquesta aplicació, sense cap dada teva.</li>
+</ul>
+<p><strong>Els avisos, els widgets i l'accés ràpid</strong> es generen al mateix telèfon amb aquestes dades. Cap d'ells no passa per servidors: no hi ha notificacions enviades des d'internet. Els widgets mostren el teu nivell de bateria a la pantalla d'inici, a la vista de qualsevol que miri el telèfon.</p>
+
+<h2>Exportar l'historial</h2>
+<p>Si toques «Exportar l'historial (CSV)», l'aplicació crea al telèfon un fitxer amb les teves lectures i les teves càrregues, i Android et deixa triar a quina aplicació enviar-lo (el teu correu, el teu núvol, una app de missatgeria…). L'envies tu i només on tu tries; des d'aquell moment s'hi aplica la privadesa d'aquella aplicació. JR Soft no rep res.</p>
+
+<h2>Còpies de seguretat, canvi de mòbil i el que no es traspassa</h2>
+<p>La còpia de seguretat d'Android al núvol (la del teu compte de Google) està desactivada per a les dades d'aquesta aplicació: no se'n puja cap. Android sí que desa al teu compte la llista de les apps que tenies instal·lades, per tornar-les a instal·lar, però aquesta llista la gestiona Google i no porta dades de l'aplicació.</p>
+<p>Si, en configurar un mòbil nou, copies les teves dades directament des de l'antic, amb cable o sense, l'historial, les càrregues, les proves de carregadors i la configuració poden passar al mòbil nou. Aquest traspàs el demanes tu i el fa Android, amb la seva eina o amb la del fabricant del mòbil i amb les seves pròpies condicions. Segons la documentació d'Android, va d'un mòbil a l'altre sense passar per servidors. En cap cas no passa pels nostres: JR Soft no rep res. Que es faci depèn de la versió d'Android i del fabricant, així que no ho podem garantir. A Android 7 i 8 no es traspassa res.</p>
+<p>No es traspassa el que només serveix al mòbil antic: el que l'aplicació va aprendre d'aquell telèfon (la unitat del corrent, el seu límit de càrrega i els avisos ja enviats), la teva elecció sobre els anuncis i l'estat intern de la publicitat. Al mòbil nou, l'aplicació et tornarà a preguntar el que calgui.</p>
+
+<h2>Dades que sí que surten del telèfon</h2>
+
+<h3>Publicitat: Google AdMob</h3>
+<p>L'aplicació mostra publicitat discreta, servida per l'SDK de publicitat de Google (AdMob): un bàner al peu de les pantalles Historial i Salut, i anuncis natius, amb l'etiqueta «Anunci», entre les càrregues de l'historial i al final del detall d'una càrrega. Mai no hi ha anuncis a pantalla completa, ni a l'estat de la bateria, ni a la Guia, ni als avisos, els widgets o la configuració. Per a la publicitat, l'aplicació declara el permís <code>com.google.android.gms.permission.AD_ID</code>, que dona accés a l'identificador de publicitat d'Android; aquest identificador es pot restablir i esborrar des de <em>Configuració d'Android → Google → Anuncis</em> (o <em>Configuració → Privadesa → Anuncis</em>, segons el mòbil).</p>
+<p>A més de l'identificador de publicitat, l'SDK d'AdMob recull l'identificador del conjunt d'aplicacions (app set ID), les interaccions amb l'aplicació i amb els anuncis, i dades de diagnòstic (temps d'inici, bloquejos i consum d'energia). Google pot fer servir la teva adreça IP per estimar una ubicació aproximada, de l'ordre d'una ciutat. Google fa servir aquestes dades per servir i mesurar la publicitat, per a estadístiques i per prevenir fraus, segons la seva pròpia política. Als mòbils que les tenen, l'SDK també pot fer servir les funcions de publicitat d'Android (Privacy Sandbox), que pots gestionar a la configuració de privadesa d'Android.</p>
+<p>A l'Espai Econòmic Europeu, al Regne Unit i a Suïssa, i allà on la llei ho demani, l'aplicació mostra el formulari de consentiment de Google (UMP) abans de servir publicitat personalitzada. Pots canviar la teva elecció quan vulguis des de <em>Configuració → Opcions de privadesa dels anuncis</em>.</p>
+<p>El missatge de consentiment dels anuncis el mostra Google amb un text comú a tots els seus socis publicitaris, i per això esmenta la geolocalització precisa. Segons Google, el seu SDK d'anuncis només fa servir la ubicació aproximada que es dedueix de l'adreça IP, i aquesta aplicació no li passa cap ubicació. Pots rebutjar aquest ús a «Gestiona les opcions».</p>
+<p><strong>Les dades de la teva bateria no arriben mai a la publicitat.</strong> La petició d'anunci surt sense cap lectura, càrrega ni ajust teu. Si rebutges el consentiment, veuràs publicitat no personalitzada o limitada i l'aplicació funcionarà exactament igual: no hi ha cap funció bloquejada.</p>
+
+<h3>Valorar, compartir i escriure'ns</h3>
+<p>Si valores l'aplicació, la finestra de valoració és de Google Play i la valoració la rep Google amb el teu compte, segons la seva política. «Compartir l'app» lliura un enllaç a l'aplicació que triïs. Si ens escrius amb «Escriu-nos», el correu l'envies tu des de la teva aplicació de correu i ens arriba la teva adreça i el que ens expliquis.</p>
+
+<h3>Adreça IP</h3>
+<p>Com en qualsevol aplicació que es connecta a internet, els servidors de Google reben la teva adreça IP quan es demanen els anuncis. L'aplicació no es connecta a cap altre servidor.</p>
+
+<h2>Permisos que demana l'aplicació</h2>
+<table>
+  <tr><th>Permís</th><th>Per a què</th></tr>
+  <tr><td>Notificacions (opcional)</td><td>Els avisos que tries: en arribar al nivell de càrrega que posis (80 % per defecte), de temperatura alta, de bateria baixa i de «fa hores que és al 100 %», i la notificació amb l'estat si l'actives. Es demana amb una explicació i el pots treure a la configuració d'Android; sense aquest permís, l'aplicació funciona, però no avisa.</td></tr>
+  <tr><td>Executar en iniciar el telèfon</td><td>Tornar a programar les lectures en segon pla i els avisos després de reiniciar el telèfon.</td></tr>
+  <tr><td>Mantenir el telèfon actiu un moment</td><td>El fa servir la biblioteca d'Android que fa les lectures en segon pla (WorkManager), per acabar cada lectura curta.</td></tr>
+  <tr><td>Internet i estat de la xarxa</td><td>La publicitat.</td></tr>
+  <tr><td>Identificador de publicitat i funcions de publicitat d'Android</td><td>La publicitat (mira més amunt).</td></tr>
+</table>
+<p>L'aplicació no té cap servei permanent en primer pla: el seguiment en segon pla són tasques curtes que programa Android.</p>
+
+<h2>Tercers implicats</h2>
+<table>
+  <tr><th>Servei</th><th>Per a què</th><th>La seva política</th></tr>
+  <tr><td>Google AdMob</td><td>Publicitat i formulari de consentiment</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+  <tr><td>Google Play</td><td>La valoració dins de l'app, i els enllaços de «Més aplicacions» i «Compartir l'app», només si els fas servir</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>Transferències fora d'Europa</h2>
+<p>Google (AdMob) pot tractar dades fora de l'Espai Econòmic Europeu. Google LLC està adherida al Marc de Privadesa de Dades UE-EUA (Data Privacy Framework), a la seva extensió per al Regne Unit i al marc Suïssa-EUA.</p>
+
+<h2>Base legal i conservació</h2>
+<p><strong>Base jurídica.</strong> El que es processa al teu telèfon no arriba a JR Soft: les teves lectures, les teves càrregues, les teves proves i la teva configuració es desen perquè l'aplicació faci el que li demanes (art. 6.1.b RGPD). Per al que sí que en surt: (1) publicitat personalitzada i ús de l'emmagatzematge del dispositiu amb finalitats publicitàries a l'EEE, al Regne Unit i a Suïssa: el teu consentiment, que dones o denegues al formulari de Google i pots retirar a <em>Configuració → Opcions de privadesa dels anuncis</em> (art. 6.1.a RGPD i art. 22.2 LSSI-CE); (2) publicitat no personalitzada, el seu mesurament, els registres tècnics i la prevenció del frau: l'interès legítim a finançar una aplicació gratuïta, a fer que funcioni bé i a protegir-la del frau (art. 6.1.f RGPD); (3) si ens escrius: l'interès legítim a respondre't i resoldre el que ens expliques (art. 6.1.f RGPD). Google tracta les dades d'AdMob com a responsable independent, amb les seves pròpies polítiques.</p>
+<p>Les dades que es desen al teu telèfon hi romanen fins que les esborres, desinstal·les l'aplicació o n'esborres les dades. L'historial no té límit de dies: creix poc, perquè desa com a màxim una lectura cada 4 minuts. Aquesta aplicació no conserva cap dada fora del teu telèfon, tret dels missatges que ens envies, que s'esborren quan l'assumpte està resolt i, com a màxim, un any després de rebre'ls; Google conserva les seves segons les seves polítiques.</p>
+
+<h2>Seguretat</h2>
+<p>El que desa l'aplicació és al seu emmagatzematge privat, on Android no deixa entrar altres aplicacions, i no es puja a la còpia de seguretat al núvol. L'aplicació no té servidors ni comptes propis que puguin patir una filtració, i no rep dades d'internet que no siguin els anuncis. El fitxer que exportes es crea en una carpeta privada de l'aplicació i només en surt quan tu el comparteixes. Les connexions de l'SDK d'anuncis de Google van xifrades (TLS). Els missatges que ens envies es desen en un compte de correu al qual només accedeix JR Soft, i s'esborren en els terminis indicats més amunt.</p>
+
+<h2>Els teus drets</h2>
+<p>Si resideixes a l'Espai Econòmic Europeu, al Regne Unit o a Suïssa, el RGPD (o la llei equivalent del teu país) et reconeix els drets d'accés, rectificació, supressió, limitació, portabilitat i oposició. A la pràctica, i atès que aquesta aplicació no desa cap dada associada a la teva persona fora del teu telèfon:</p>
+<ul>
+  <li><strong>Accés i portabilitat:</strong> tot el que desa l'aplicació ho veus en ella (Historial, Salut i la prova de carregadors), i t'ho pots endur amb «Exportar l'historial (CSV)».</li>
+  <li><strong>Rectificació i supressió:</strong> pots canviar o treure la capacitat de fàbrica, esborrar cada prova de carregador, esborrar totes les dades de l'aplicació des de la configuració d'Android o desinstal·lar-la. L'identificador de publicitat es restableix o s'esborra des de la configuració d'Android.</li>
+  <li><strong>Oposició i retirada del consentiment:</strong> <em>Configuració → Opcions de privadesa dels anuncis</em>; i els avisos, des de la mateixa aplicació o des de la configuració de notificacions d'Android.</li>
+</ul>
+<p>Les dades que recull la biblioteca de Google les gestiona Google, i els drets sobre aquestes dades s'exerceixen davant Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. També pots presentar una reclamació davant l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> o davant l'autoritat de protecció de dades del teu país (RGPD, art. 77).</p>
+
+<h2 id="eua">Residents als EUA</h2>
+<p>Si vius en un estat dels EUA amb llei de privadesa pròpia (per exemple, Califòrnia, Colorado, Connecticut, Texas o Virgínia), tens dret a demanar que les teves dades personals no es venguin ni es comparteixin per a publicitat dirigida. Ho pots fer a l'aplicació: <em>Configuració → Opcions de privadesa dels anuncis</em> → l'opció per no vendre ni compartir les teves dades. A partir d'aleshores veuràs publicitat no personalitzada o limitada. Les lectures de la teva bateria, les teves càrregues i la teva configuració es queden al teu telèfon i no s'envien a ningú; per als anuncis, l'SDK de Google fa servir identificadors del dispositiu i una ubicació aproximada (a escala de ciutat). Per a qualsevol altra petició sobre les teves dades, escriu-nos a <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+<p>També ens pots demanar quines dades teves tenim, que les esborrem o que les corregim, sense que et tractem pitjor per això. En els últims 12 mesos, les categories que l'SDK de Google ha pogut recollir per a publicitat són identificadors (del dispositiu i de publicitat), activitat a l'aplicació (interaccions amb els anuncis) i una ubicació aproximada deduïda de l'IP; no es recullen dades sensibles. JR Soft només conserva els correus que li envies. Aquesta política es revisa almenys una vegada l'any.</p>
+
+<h2 id="brasil">Residents al Brasil</h2>
+<p>Si vius al Brasil, la Llei general de protecció de dades (LGPD, Llei 13.709/2018) et reconeix, entre d'altres, els drets de confirmació i accés, correcció, anonimització o eliminació, portabilitat, informació sobre amb qui es comparteixen les teves dades i revocació del consentiment (art. 18). Com que JR Soft no desa dades teves fora del teu telèfon, s'exerceixen tal com s'explica a «Els teus drets»; els de les dades de la publicitat, davant Google, que les pot tractar fora del Brasil amb les seves pròpies garanties. La publicitat es basa en l'interès legítim a finançar una aplicació gratuïta (art. 7, IX). Pots escriure'ns a <a href="mailto:demual@gmail.com">demual@gmail.com</a> o presentar una reclamació davant l'ANPD (Autoridade Nacional de Proteção de Dados).</p>
+
+<h2>Menors</h2>
+<p>Aguantín està pensada per a persones adultes i no està dirigida a menors de 18 anys. No recollim conscientment dades de menors; les dades tècniques que envia AdMob són les descrites més amunt.</p>
+
+<h2>El que Aguantín no és</h2>
+<p>«Salut de la bateria» es refereix a la bateria del telèfon, no a la teva salut: Aguantín no té cap funció de salut. Les capacitats, els cicles, el corrent i les previsions són estimacions amb el que dona cada mòbil, no mesures del fabricant. Samsung i Pixel són marques dels seus propietaris; Aguantín només explica on són els seus ajustos i no hi està afiliada.</p>
+
+<h2>Canvis en aquesta política</h2>
+<p>Si aquesta política canvia de manera substancial, es publicarà la versió nova en aquesta mateixa adreça amb una data d'actualització diferent.</p>
+
+<footer>
+<p>Aguantín · JR Soft (Javier Román Sáez) · <code>com.jrsoft.bateria</code> · Contacte: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Altres idiomes</a></p>
+</footer>
+
+</body>
+</html>

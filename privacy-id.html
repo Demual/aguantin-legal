@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aguantín · Kebijakan Privasi</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #1f1b16; background: #fff8f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece0d8; background: #1a120e; }
+    td, th { border-color: #444 !important; }
+    a { color: #ffb693; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #8b3a0f; }
+  @media (prefers-color-scheme: dark) { h2 { color: #ffb693; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-inline-start: 4px solid #8b3a0f; padding-block: .5rem; padding-inline: 1rem 0; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Kebijakan Privasi</h1>
+<p class="fecha">Aplikasi Aguantín (<code>com.jrsoft.bateria</code>) · Terakhir diperbarui: 17 November 2026</p>
+
+<p class="clave"><strong>Dalam satu kalimat:</strong> aplikasi ini tidak memiliki akun pengguna maupun server, dan hasil pembacaan baterai Anda, riwayat pengisian daya, pengujian pengisi daya, serta setelan Anda tidak keluar dari ponsel Anda (kecuali jika Anda sendiri memindahkannya ke ponsel baru atau mengekspor riwayat). Hanya iklan yang mengirim data, dan yang melakukannya adalah pustaka Google.</p>
+
+<p>Versi bahasa Spanyol adalah versi acuan kebijakan ini; teks ini adalah terjemahan dari versi yang sama.</p>
+
+<h2>Siapa yang bertanggung jawab</h2>
+<p>Pengendali data adalah JR Soft, nama dagang Javier Román Sáez, pengembang aplikasi ini. Anda dapat menghubungi kami di <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+
+<h2>Yang TIDAK dilakukan aplikasi ini</h2>
+<ul>
+  <li>Tidak ada pendaftaran, akun, profil pengguna, atau server milik kami sendiri. Aplikasi ini sepenuhnya berjalan di ponsel Anda.</li>
+  <li>Tidak ada alat analitik atau pelaporan kerusakan aplikasi milik kami sendiri: tidak ada Google Analytics, Crashlytics, atau yang serupa. Satu-satunya pustaka yang mengirim datanya sendiri ke pihak ketiga adalah pustaka iklan, yang dijelaskan di bawah. Aplikasi ini menyertakan pustaka konfigurasi jarak jauh Firebase (Remote Config), yang dapat digunakan untuk menyesuaikan iklan tanpa merilis versi baru, tetapi pustaka ini dinonaktifkan: tidak berjalan dan tidak terhubung ke server mana pun. Jika suatu hari diaktifkan, kebijakan ini akan diperbarui terlebih dahulu.</li>
+  <li>Aplikasi ini tidak menggunakan lokasi ponsel, kamera, mikrofon, kontak, foto, atau file Anda. Untuk membaca baterai tidak diperlukan izin apa pun: Android memberikan informasi tersebut kepada aplikasi apa pun.</li>
+  <li>Aplikasi ini tidak melihat aplikasi lain apa saja yang Anda miliki atau berapa banyak yang dihabiskan oleh masing-masing aplikasi.</li>
+  <li>JR Soft tidak menyimpan data Anda, kecuali email yang Anda kirimkan kepada kami, dan tidak memberikan daftar atau basis data berisi data tersebut kepada siapa pun. Untuk menampilkan dan mengukur iklan, SDK iklan Google (AdMob) secara mandiri mengumpulkan pengenal perangkat dan data teknis lainnya lalu mengirimkannya ke Google, seperti yang dijelaskan dalam kebijakan ini. Beberapa undang-undang privasi di AS menganggap bahwa mengizinkan SDK pihak ketiga mengumpulkan data tersebut untuk iklan yang dipersonalisasi sama dengan “menjual” atau “membagikan” data pribadi; jika Anda tinggal di sana, Anda dapat menolaknya (lihat “<a href="#amerika-serikat">Penduduk AS</a>”).</li>
+</ul>
+
+<h2>Data yang hanya tersimpan di ponsel Anda</h2>
+<p>Informasi ini disimpan di penyimpanan pribadi aplikasi dan tidak keluar dari aplikasi. Informasi ini terhapus seluruhnya jika Anda mencopot pemasangan aplikasi atau menghapus datanya dari setelan Android (Setelan → Aplikasi → Aguantín → Penyimpanan → Hapus data).</p>
+<ul>
+  <li><strong>Hasil pembacaan baterai</strong>: tanggal dan waktu, level, apakah sedang mengisi daya, jenis pengisi daya (pengisi daya dinding, USB, atau nirkabel), suhu, tegangan, perkiraan arus, dan penghitung muatan ponsel. Saat aplikasi ditutup, pembacaan dilakukan di latar belakang, kira-kira setiap 15 menit dan lebih sering saat mengisi daya.</li>
+  <li><strong>Pengisian daya Anda</strong>: kapan masing-masing dimulai dan berakhir, dari level berapa ke level berapa, dengan pengisi daya apa, suhu dan arus tertinggi, serta berapa banyak daya yang masuk.</li>
+  <li><strong>Perkiraan kesehatan</strong>: kapasitas yang dihitung aplikasi dari pengisian daya Anda, siklus (yang dilaporkan Android 14 atau yang lebih baru, jika produsen mengisinya, dan yang dihitung oleh aplikasi), dan kapasitas asli, hanya jika Anda sendiri yang memasukkannya.</li>
+  <li><strong>Pengujian pengisi daya Anda</strong>: nama yang Anda berikan dan hasil pengukuran masing-masing (arus dan daya rata-rata, tegangan, level, dan durasi). Pengujian ini dapat dihapus satu per satu dari aplikasi.</li>
+  <li><strong>Setelan Anda</strong>: gaya, tema, satuan suhu, peringatan mana yang Anda inginkan dan pada level atau suhu berapa, serta apakah Anda menginginkan notifikasi status.</li>
+  <li><strong>Hal yang dipelajari aplikasi tentang ponsel ini</strong>: dalam satuan apa dan dengan tanda apa ponsel ini memberikan nilai arus, batas pengisian daya yang terlihat pada ponsel ini (misalnya, apakah berhenti di 80%), dan peringatan mana yang sudah dikirim, agar tidak diulang.</li>
+  <li>Tanggal terakhir kali Anda diminta menilai aplikasi, agar permintaan itu tidak muncul lebih dari sekali setiap 120 hari.</li>
+  <li>Produsen dan model ponsel, yang diperiksa Panduan pada saat itu juga untuk menampilkan langkah-langkah untuk merek Anda. Data ini tidak disimpan maupun dikirim.</li>
+  <li>Negara kartu SIM Anda (atau, jika tidak ada, negara wilayah sistem), yang diperiksa layar “Aplikasi lain dari JR Soft” pada saat itu juga untuk menampilkan hanya aplikasi yang tersedia di negara Anda. Data ini tidak disimpan maupun dikirim. Tautan Google Play di layar tersebut dan di “Bagikan aplikasi” membawa label yang menyatakan bahwa tautan itu berasal dari aplikasi ini, tanpa data Anda apa pun.</li>
+</ul>
+<p><strong>Peringatan, widget, dan kotak Setelan Cepat</strong> dibuat di ponsel itu sendiri dari data ini. Tidak satu pun melewati server: tidak ada notifikasi yang dikirim dari internet. Widget menampilkan level baterai Anda di layar utama, terlihat oleh siapa pun yang melihat ponsel.</p>
+
+<h2>Mengekspor riwayat</h2>
+<p>Jika Anda mengetuk “Ekspor riwayat (CSV)”, aplikasi membuat file di ponsel berisi hasil pembacaan dan pengisian daya Anda, dan Android memungkinkan Anda memilih aplikasi tujuan pengirimannya (email Anda, penyimpanan cloud Anda, aplikasi pesan…). Anda sendiri yang mengirimnya, dan hanya ke tujuan yang Anda pilih; sejak saat itu, kebijakan privasi aplikasi tersebut yang berlaku. JR Soft tidak menerima apa pun.</p>
+
+<h2>Pencadangan, pindah ponsel, dan yang tidak dipindahkan</h2>
+<p>Pencadangan cloud Android (yang ada di Akun Google Anda) dinonaktifkan untuk data aplikasi ini: tidak ada data yang diunggah. Android memang menyimpan di akun Anda daftar aplikasi yang pernah Anda instal agar dapat diinstal ulang, tetapi daftar itu dikelola oleh Google dan tidak berisi data aplikasi.</p>
+<p>Jika saat menyiapkan ponsel baru Anda menyalin data langsung dari ponsel lama, dengan atau tanpa kabel, riwayat, pengisian daya, pengujian pengisi daya, dan setelan dapat ikut pindah ke ponsel baru. Pemindahan itu Anda sendiri yang memintanya dan Android yang menjalankannya, dengan alatnya sendiri atau alat dari produsen ponsel, dan dengan ketentuannya sendiri. Menurut dokumentasi Android, pemindahan berlangsung dari satu ponsel ke ponsel lain tanpa melewati server. Dalam keadaan apa pun pemindahan itu tidak melewati server kami: JR Soft tidak menerima apa pun. Terjadi atau tidaknya pemindahan bergantung pada versi Android dan produsennya, jadi kami tidak dapat menjaminnya. Di Android 7 dan 8 tidak ada yang dipindahkan.</p>
+<p>Yang tidak dipindahkan adalah hal-hal yang hanya berguna di ponsel lama: hal yang dipelajari aplikasi tentang ponsel itu (satuan arus, batas pengisian dayanya, dan peringatan yang sudah dikirim), pilihan Anda tentang iklan, dan status internal iklan. Di ponsel baru, aplikasi akan menanyakan kembali hal yang diperlukan.</p>
+
+<h2>Data yang keluar dari ponsel</h2>
+
+<h3>Iklan: Google AdMob</h3>
+<p>Aplikasi ini menampilkan iklan yang tidak mengganggu, yang ditayangkan oleh SDK iklan Google (AdMob): sebuah banner di bagian bawah layar Riwayat dan Kesehatan, serta iklan native berlabel “Iklan” di antara pengisian daya dalam riwayat dan di akhir detail pengisian daya. Tidak pernah ada iklan layar penuh, dan tidak ada iklan di status baterai, Panduan, peringatan, widget, atau setelan. Untuk iklan, aplikasi ini mendeklarasikan izin <code>com.google.android.gms.permission.AD_ID</code>, yang memberikan akses ke ID iklan Android; ID ini dapat disetel ulang dan dihapus di <em>Setelan Android → Google → Iklan</em> (atau <em>Setelan → Privasi → Iklan</em>, tergantung ponselnya).</p>
+<p>Selain ID iklan, SDK AdMob mengumpulkan ID set aplikasi (app set ID), interaksi dengan aplikasi dan dengan iklan, serta data diagnostik (waktu mulai, aplikasi macet, dan konsumsi daya). Google dapat menggunakan alamat IP Anda untuk memperkirakan lokasi Anda secara kasar, kira-kira setingkat kota. Google menggunakan data ini untuk menayangkan dan mengukur iklan, untuk statistik, dan untuk mencegah penipuan, sesuai dengan kebijakannya sendiri. Di ponsel yang memilikinya, SDK juga dapat menggunakan fitur iklan Android (Privacy Sandbox), yang dapat Anda kelola di setelan privasi Android.</p>
+<p>Di Kawasan Ekonomi Eropa, Inggris Raya, dan Swiss, serta di mana pun hukum mewajibkannya, aplikasi ini menampilkan formulir persetujuan Google (UMP) sebelum menayangkan iklan yang dipersonalisasi. Anda dapat mengubah pilihan Anda kapan saja di <em>Setelan → Opsi privasi iklan</em>.</p>
+<p>Pesan persetujuan iklan ditampilkan oleh Google dengan teks yang sama untuk semua mitra periklanannya, sehingga pesan itu menyebutkan geolokasi akurat. Menurut Google, SDK iklannya hanya menggunakan perkiraan lokasi yang disimpulkan dari alamat IP, dan aplikasi ini tidak memberikan lokasi apa pun kepadanya. Anda dapat menolak penggunaan tersebut di “Kelola opsi”.</p>
+<p><strong>Data baterai Anda tidak pernah sampai ke iklan.</strong> Permintaan iklan dikirim tanpa hasil pembacaan, pengisian daya, atau setelan Anda apa pun. Jika Anda menolak memberikan persetujuan, Anda akan melihat iklan yang tidak dipersonalisasi atau terbatas, dan aplikasi akan berfungsi sama persis: tidak ada fitur yang dikunci.</p>
+
+<h3>Menilai, membagikan, dan menghubungi kami</h3>
+<p>Jika Anda menilai aplikasi, jendela penilaian adalah milik Google Play dan penilaian itu diterima Google bersama akun Anda, sesuai dengan kebijakannya. “Bagikan aplikasi” menyerahkan tautan ke aplikasi yang Anda pilih. Jika Anda menulis kepada kami melalui “Hubungi kami”, Anda sendiri yang mengirim email dari aplikasi email Anda, dan kami menerima alamat Anda serta apa pun yang Anda sampaikan.</p>
+
+<h3>Alamat IP</h3>
+<p>Seperti pada aplikasi apa pun yang terhubung ke internet, server Google menerima alamat IP Anda saat iklan diminta. Aplikasi ini tidak terhubung ke server lain mana pun.</p>
+
+<h2>Izin yang diminta aplikasi</h2>
+<table>
+  <tr><th>Izin</th><th>Untuk apa</th></tr>
+  <tr><td>Notifikasi (opsional)</td><td>Peringatan yang Anda pilih: saat mencapai level pengisian daya yang Anda tetapkan (bawaannya 80%), suhu tinggi, baterai lemah, dan “sudah berjam-jam di 100%”, serta notifikasi status jika Anda mengaktifkannya. Izin ini diminta disertai penjelasan dan dapat Anda cabut di setelan Android; tanpa izin ini, aplikasi tetap berfungsi tetapi tidak memberi peringatan.</td></tr>
+  <tr><td>Jalankan saat ponsel dinyalakan</td><td>Menjadwalkan ulang pembacaan di latar belakang dan peringatan setelah ponsel dimulai ulang.</td></tr>
+  <tr><td>Membuat ponsel tetap aktif sebentar</td><td>Digunakan oleh pustaka Android yang melakukan pembacaan di latar belakang (WorkManager) untuk menyelesaikan setiap pembacaan singkat.</td></tr>
+  <tr><td>Internet dan status jaringan</td><td>Iklan.</td></tr>
+  <tr><td>ID iklan dan fitur iklan Android</td><td>Iklan (lihat di atas).</td></tr>
+</table>
+<p>Aplikasi ini tidak memiliki layanan latar depan permanen: pemantauan di latar belakang berupa tugas-tugas singkat yang dijadwalkan oleh Android.</p>
+
+<h2>Pihak ketiga yang terlibat</h2>
+<table>
+  <tr><th>Layanan</th><th>Untuk apa</th><th>Kebijakannya</th></tr>
+  <tr><td>Google AdMob</td><td>Iklan dan formulir persetujuan</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+  <tr><td>Google Play</td><td>Penilaian di dalam aplikasi, serta tautan “Aplikasi lain” dan “Bagikan aplikasi”, hanya jika Anda menggunakannya</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+</table>
+
+<h2>Transfer ke luar Eropa</h2>
+<p>Google (AdMob) dapat memproses data di luar Kawasan Ekonomi Eropa. Google LLC tergabung dalam Kerangka Privasi Data UE-AS (Data Privacy Framework), perluasannya untuk Inggris Raya, dan kerangka Swiss-AS.</p>
+
+<h2>Dasar hukum dan masa penyimpanan</h2>
+<p><strong>Dasar hukum.</strong> Apa yang diproses di ponsel Anda tidak sampai ke JR Soft: hasil pembacaan, pengisian daya, pengujian, dan setelan Anda disimpan agar aplikasi dapat melakukan apa yang Anda minta (Pasal 6 ayat (1) huruf b GDPR). Untuk data yang keluar dari ponsel: (1) iklan yang dipersonalisasi dan penggunaan penyimpanan perangkat untuk tujuan periklanan di KEE, Inggris Raya, dan Swiss: persetujuan Anda, yang Anda berikan atau tolak di formulir Google dan dapat Anda tarik di <em>Setelan → Opsi privasi iklan</em> (Pasal 6 ayat (1) huruf a GDPR dan Pasal 22 ayat (2) undang-undang Spanyol LSSI-CE); (2) iklan yang tidak dipersonalisasi, pengukurannya, catatan teknis, dan pencegahan penipuan: kepentingan yang sah untuk membiayai aplikasi gratis, menjaga agar aplikasi berfungsi dengan baik, dan melindunginya dari penipuan (Pasal 6 ayat (1) huruf f GDPR); (3) jika Anda menulis kepada kami: kepentingan yang sah untuk membalas Anda dan menyelesaikan apa yang Anda sampaikan (Pasal 6 ayat (1) huruf f GDPR). Google memproses data AdMob sebagai pengendali data independen, sesuai dengan kebijakannya sendiri.</p>
+<p>Data yang disimpan di ponsel Anda tetap ada sampai Anda menghapusnya, mencopot pemasangan aplikasi, atau menghapus datanya. Riwayat tidak memiliki batas hari: ukurannya hanya bertambah sedikit, karena paling banyak menyimpan satu pembacaan setiap 4 menit. Aplikasi ini tidak menyimpan data apa pun di luar ponsel Anda, kecuali pesan yang Anda kirimkan kepada kami, yang dihapus setelah urusannya selesai dan paling lambat satu tahun setelah diterima; Google menyimpan datanya sendiri sesuai dengan kebijakannya.</p>
+
+<h2>Keamanan</h2>
+<p>Apa yang disimpan aplikasi berada di penyimpanan pribadinya, yang oleh Android tidak boleh diakses aplikasi lain, dan tidak diunggah ke cadangan cloud. Aplikasi ini tidak memiliki server atau akun sendiri yang bisa mengalami kebocoran data, dan tidak menerima data dari internet selain iklan. File yang Anda ekspor dibuat di folder pribadi aplikasi dan hanya keluar dari sana saat Anda membagikannya. Koneksi SDK iklan Google dienkripsi (TLS). Pesan yang Anda kirimkan kepada kami disimpan di akun email yang hanya dapat diakses oleh JR Soft, dan dihapus dalam jangka waktu yang disebutkan di atas.</p>
+
+<h2>Hak Anda</h2>
+<p>Jika Anda tinggal di Kawasan Ekonomi Eropa, Inggris Raya, atau Swiss, Peraturan Perlindungan Data Umum (GDPR) atau undang-undang setara di negara Anda memberi Anda hak atas akses, perbaikan, penghapusan, pembatasan pemrosesan, portabilitas, dan keberatan. Dalam praktiknya, karena aplikasi ini tidak menyimpan data apa pun yang terkait dengan diri Anda di luar ponsel Anda:</p>
+<ul>
+  <li><strong>Akses dan portabilitas:</strong> semua yang disimpan aplikasi dapat Anda lihat di dalamnya (Riwayat, Kesehatan, dan pengujian pengisi daya), dan Anda dapat membawanya dengan “Ekspor riwayat (CSV)”.</li>
+  <li><strong>Perbaikan dan penghapusan:</strong> Anda dapat mengubah atau menghapus kapasitas asli, menghapus setiap pengujian pengisi daya, menghapus semua data aplikasi dari setelan Android, atau mencopot pemasangan aplikasi. ID iklan dapat disetel ulang atau dihapus dari setelan Android.</li>
+  <li><strong>Keberatan dan penarikan persetujuan:</strong> <em>Setelan → Opsi privasi iklan</em>; dan untuk peringatan, dari aplikasi itu sendiri atau dari setelan notifikasi Android.</li>
+</ul>
+<p>Data yang dikumpulkan pustaka Google dikelola oleh Google, dan hak atas data tersebut dijalankan melalui Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Anda juga dapat mengajukan pengaduan kepada otoritas perlindungan data Spanyol (<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>) atau kepada otoritas perlindungan data di negara Anda (Pasal 77 GDPR).</p>
+
+<h2 id="amerika-serikat">Penduduk AS</h2>
+<p>Jika Anda tinggal di negara bagian AS yang memiliki undang-undang privasi sendiri (misalnya California, Colorado, Connecticut, Texas, atau Virginia), Anda berhak meminta agar data pribadi Anda tidak dijual atau dibagikan untuk iklan bertarget. Anda dapat melakukannya di aplikasi: <em>Setelan → Opsi privasi iklan</em> → opsi untuk tidak menjual atau membagikan data Anda. Sejak saat itu, Anda akan melihat iklan yang tidak dipersonalisasi atau terbatas. Hasil pembacaan baterai, pengisian daya, dan setelan Anda tetap berada di ponsel Anda dan tidak dikirim kepada siapa pun; untuk iklan, SDK Google menggunakan pengenal perangkat dan perkiraan lokasi (setingkat kota). Untuk permintaan lain apa pun tentang data Anda, kirim email kepada kami di <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+<p>Anda juga dapat meminta kami memberi tahu data apa tentang Anda yang kami miliki, menghapusnya, atau memperbaikinya, tanpa diperlakukan lebih buruk karena hal itu. Dalam 12 bulan terakhir, kategori yang mungkin telah dikumpulkan SDK Google untuk iklan adalah pengenal (perangkat dan iklan), aktivitas dalam aplikasi (interaksi dengan iklan), dan perkiraan lokasi yang disimpulkan dari alamat IP; tidak ada data sensitif yang dikumpulkan. JR Soft hanya menyimpan email yang Anda kirimkan kepadanya. Kebijakan ini ditinjau setidaknya sekali setahun.</p>
+
+<h2 id="brasil">Penduduk Brasil</h2>
+<p>Jika Anda tinggal di Brasil, Undang-Undang Umum Perlindungan Data (LGPD, Undang-Undang 13.709/2018) memberi Anda, antara lain, hak atas konfirmasi dan akses, perbaikan, anonimisasi atau penghapusan, portabilitas, informasi tentang pihak yang menerima data Anda, dan pencabutan persetujuan (Pasal 18). Karena JR Soft tidak menyimpan data Anda di luar ponsel Anda, hak-hak tersebut dijalankan seperti yang dijelaskan di “Hak Anda”; hak atas data iklan dijalankan melalui Google, yang dapat memprosesnya di luar Brasil dengan perlindungannya sendiri. Iklan didasarkan pada kepentingan yang sah untuk membiayai aplikasi gratis (Pasal 7, IX). Anda dapat mengirim email kepada kami di <a href="mailto:demual@gmail.com">demual@gmail.com</a> atau mengajukan pengaduan kepada ANPD (Autoridade Nacional de Proteção de Dados).</p>
+
+<h2>Anak di bawah umur</h2>
+<p>Aguantín dirancang untuk orang dewasa dan tidak ditujukan untuk siapa pun yang berusia di bawah 18 tahun. Kami tidak dengan sengaja mengumpulkan data dari anak di bawah umur; data teknis yang dikirim AdMob adalah yang dijelaskan di atas.</p>
+
+<h2>Apa yang bukan Aguantín</h2>
+<p>“Kesehatan baterai” mengacu pada baterai ponsel, bukan kesehatan Anda: Aguantín tidak memiliki fitur kesehatan apa pun. Kapasitas, siklus, arus, dan prakiraan adalah estimasi berdasarkan apa yang diberikan setiap ponsel, bukan pengukuran dari produsen. Samsung dan Pixel adalah merek dagang milik pemiliknya masing-masing; Aguantín hanya menjelaskan letak setelannya dan tidak berafiliasi dengan mereka.</p>
+
+<h2>Perubahan pada kebijakan ini</h2>
+<p>Jika kebijakan ini berubah secara substansial, versi baru akan dipublikasikan di alamat yang sama ini dengan tanggal pembaruan yang berbeda.</p>
+
+<footer>
+<p>Aguantín · JR Soft (Javier Román Sáez) · <code>com.jrsoft.bateria</code> · Kontak: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Bahasa lain</a></p>
+</footer>
+
+</body>
+</html>
